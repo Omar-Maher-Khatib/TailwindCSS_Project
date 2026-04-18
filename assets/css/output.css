@@ -7,11 +7,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-bold: 700;
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-Neutral: #F8FBFB;
   }
 }
 @layer base {
@@ -163,6 +162,33 @@
   }
 }
 @layer utilities {
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .my-0 {
+    margin-block: calc(var(--spacing) * 0);
+  }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
   }
@@ -172,17 +198,94 @@
   .resize {
     resize: both;
   }
+  .flex-row {
+    flex-direction: row;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .space-x-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[3px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(3px * var(--tw-space-x-reverse));
+      margin-inline-end: calc(3px * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[6\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(6 * var(--tw-space-x-reverse));
+      margin-inline-end: calc(6 * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[16px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(16px * var(--tw-space-x-reverse));
+      margin-inline-end: calc(16px * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[24px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(24px * var(--tw-space-x-reverse));
+      margin-inline-end: calc(24px * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[32\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(32 * var(--tw-space-x-reverse));
+      margin-inline-end: calc(32 * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-\[32px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(32px * var(--tw-space-x-reverse));
+      margin-inline-end: calc(32px * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  .bg-Neutral {
+    background-color: var(--color-Neutral);
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-\[32\] {
+    padding-block: 32;
+  }
+  .py-\[32px\] {
+    padding-block: 32px;
+  }
+  .text-\[bg-Primary\] {
+    color: bg-Primary;
+  }
+  .text-\[bg-primary\] {
+    color: bg-primary;
+  }
+  .text-\[c\] {
+    color: c;
+  }
+  .text-\[pr\] {
+    color: pr;
+  }
+  .text-\[primary\] {
+    color: primary;
   }
   .underline {
     text-decoration-line: underline;
@@ -192,14 +295,15 @@
     outline-width: 1px;
   }
 }
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-outline-style {
   syntax: "*";
@@ -209,8 +313,8 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-space-x-reverse: 0;
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
