@@ -7,10 +7,16 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-semibold: 600;
+    --radius-xs: 0.125rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-Primary: #1E6F78;
     --color-Neutral: #F8FBFB;
+    --font-Primary: 'Inter', sans-serif;
+    --font-Secondary: 'Plus Jakarta Sans', sans-serif;
   }
 }
 @layer base {
@@ -183,9 +189,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .my-0 {
-    margin-block: calc(var(--spacing) * 0);
-  }
   .flex {
     display: flex;
   }
@@ -198,14 +201,18 @@
   .resize {
     resize: both;
   }
-  .flex-row {
-    flex-direction: row;
-  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .space-x-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+    }
   }
   .space-x-6 {
     :where(& > :not(:last-child)) {
@@ -214,81 +221,122 @@
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .space-x-\[3px\] {
+  .space-x-8 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
-      margin-inline-start: calc(3px * var(--tw-space-x-reverse));
-      margin-inline-end: calc(3px * calc(1 - var(--tw-space-x-reverse)));
+      margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .space-x-\[6\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(6 * var(--tw-space-x-reverse));
-      margin-inline-end: calc(6 * calc(1 - var(--tw-space-x-reverse)));
-    }
+  .rounded-\[1\] {
+    border-radius: 1;
   }
-  .space-x-\[16px\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(16px * var(--tw-space-x-reverse));
-      margin-inline-end: calc(16px * calc(1 - var(--tw-space-x-reverse)));
-    }
+  .rounded-\[20px\] {
+    border-radius: 20px;
   }
-  .space-x-\[24px\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(24px * var(--tw-space-x-reverse));
-      margin-inline-end: calc(24px * calc(1 - var(--tw-space-x-reverse)));
-    }
+  .rounded-\[30px\] {
+    border-radius: 30px;
   }
-  .space-x-\[32\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(32 * var(--tw-space-x-reverse));
-      margin-inline-end: calc(32 * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .space-x-\[32px\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(32px * var(--tw-space-x-reverse));
-      margin-inline-end: calc(32px * calc(1 - var(--tw-space-x-reverse)));
-    }
+  .rounded-xs {
+    border-radius: var(--radius-xs);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
   .bg-Neutral {
     background-color: var(--color-Neutral);
   }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
+  .bg-Primary {
+    background-color: var(--color-Primary);
   }
-  .py-\[32\] {
-    padding-block: 32;
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
-  .py-\[32px\] {
-    padding-block: 32px;
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
-  .text-\[bg-Primary\] {
-    color: bg-Primary;
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
-  .text-\[bg-primary\] {
-    color: bg-primary;
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
-  .text-\[c\] {
-    color: c;
+  .font-Primary {
+    font-family: var(--font-Primary);
   }
-  .text-\[pr\] {
-    color: pr;
+  .font-Secondary {
+    font-family: var(--font-Secondary);
   }
-  .text-\[primary\] {
-    color: primary;
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[-4\.8px\] {
+    --tw-tracking: -4.8px;
+    letter-spacing: -4.8px;
+  }
+  .tracking-\[-4px\] {
+    --tw-tracking: -4px;
+    letter-spacing: -4px;
+  }
+  .tracking-\[4\.8px\] {
+    --tw-tracking: 4.8px;
+    letter-spacing: 4.8px;
+  }
+  .text-Primary {
+    color: var(--color-Primary);
+  }
+  .text-\[\#5F6F73\] {
+    color: #5F6F73;
+  }
+  .text-\[Gray\] {
+    color: Gray;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .decoration-2 {
+    text-decoration-thickness: 2px;
+  }
+  .decoration-3 {
+    text-decoration-thickness: 3px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .underline-offset-5 {
+    text-underline-offset: 5px;
+  }
+  .underline-offset-6 {
+    text-underline-offset: 6px;
+  }
+  .underline-offset-7 {
+    text-underline-offset: 7px;
+  }
+  .opacity-70 {
+    opacity: 70%;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -305,6 +353,14 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -315,6 +371,8 @@
     *, ::before, ::after, ::backdrop {
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-outline-style: solid;
     }
   }
