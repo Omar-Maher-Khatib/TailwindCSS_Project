@@ -9,10 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-[#F7FAFA]"">
     <header class="bg-white/70 fixed w-full z-10 backdrop-blur-sm">
-      <div class="container mx-auto flex items-center justify-between py-6">
+      <div class="container mx-auto flex items-center justify-between py-6 px-8">
+        <!-- Left Side -->
         <h3 class="text-Primary text-[24px] font-Primary font-semibold tracking-[4.8px]">AQUA ESCAPE</h3>
+
+        <!-- Middle Side -->
         <ul class="flex space-x-8">
           <li class="text-[16px] text-Primary font-Secondary underline decoration-2 underline-offset-7 font-semibold tracking-tighter"><a href="#">Home</a></li>
           <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Villas</a></li>
@@ -21,6 +24,8 @@
           <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Drinks</a></li>
           <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Contact</a></li>
         </ul>
+
+        <!-- Right Side -->
         <div class="flex items-center space-x-6">
           <ul class="flex space-x-4">
             <li><a href="#"><img src="./assets/img/header/search.svg" alt="English" /></a></li>
@@ -32,9 +37,10 @@
       </div>
     </header>
 
+    <!-- Hero Section (1) -->
     <section class="bg-[url(/assets/img/HomePage/Section1/Home_Hero.png)] bg-cover bg-center w-full h-200 relative">
       <div class="w-full h-full bg-linear-to-r from-black/30 to-transparent">
-        <div class="container mx-auto w-full h-full flex items-center justify-start">
+        <div class="px-8 container mx-auto w-full h-full flex items-center justify-start">
           <div class="w-2xl">
             <h6 class="text-[#FDDFA8] text-[16px] font-semibold tracking-[3.2px]">SUMMER 2026</h6>  
             <h1 class="text-8xl/24 text-white font-extrabold font-Secondary tracking-tighter pt-4">Your perfect escape starts here</h1> 
@@ -53,7 +59,100 @@
      </div> 
     </section>
 
-    <section>
+    <!-- Luxury Villas Section (2) -->
+    <section class="my-24 container mx-auto flex items-center justify-start">
+      <div class="w-full px-8">
+        <!-- Title Of The Section -->
+       <h3 class="text-[16px] text-Primary font-Primary font-semibold tracking-[1.6px]">THE SANCTUARY</h3>
+       <div class="flex items-center justify-between w-full  flex-wrap gap-4">
+          <h1 class="text-5xl text-[#181C1D] font-bold font-Secondary pt-2">Luxury Villas</h1>
+          <div class="flex underline decoration-2 decoration-Primary underline-offset-7 items-center space-x-2 cursor-pointer">
+            <h3 class="text-Primary font-Primary font-semibold">View all properties</h3>
+            <img src="./assets/img/HomePage/Section2/arrow-right.svg" alt="arrow-right" />
+          </div>
+       </div>
+
+       <!-- Cards Section -->
+       <div class="mt-16 mb-24 flex items-center justify-between w-full flex-wrap gap-4">
+          <!-- Card 1  -->
+          <div class="flex-col items-center bg-white rounded-[30px] shadow-xs relative">
+            <div class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full">
+              <img src="assets/img/HomePage/Section2/star.svg" alt="label" class="inline-block mr-1" />
+              <span class="text-[14px] font-Primary font-semibold">4.9</span>
+            </div>
+            <img class="w-full h-auto rounded-t-[30px]" src="./assets/img/HomePage/Section2/Home_LuxuryVillas_1.png" alt="Villa1" />
+            <div class="flex-col items-center py-8 px-8">
+              <div class="flex items-center justify-between">
+                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">Azure Horizon Suite</h2>
+                <span class="text-2xl text-Primary font-semibold font-Primary">$850</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex mt-1">
+                  <img src="./assets/img/HomePage/Section2/location.svg" alt="location" />
+                  <span class="text-[#3F484A] font-Primary pl-1">North Shore</span>
+                </div>
+                <span class="text-[#3F484A] text-[12px]">/night</span>
+              </div>
+              <button class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary 
+                font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 w-full mt-4">
+                Book Suite
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2  -->
+          <div class="flex-col items-center bg-white rounded-[30px] shadow-xs relative">
+            <div class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full">
+              <img src="assets/img/HomePage/Section2/star.svg" alt="label" class="inline-block mr-1" />
+              <span class="text-[14px] font-Primary font-semibold">5.0</span>
+            </div>
+            <img class="w-full h-auto rounded-t-[30px]" src="./assets/img/HomePage/Section2/Home_LuxuryVillas_2.png" alt="Villa1" />
+            <div class="flex-col items-center py-8 px-8">
+              <div class="flex items-center justify-between">
+                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">The Coral Retreat</h2>
+                <span class="text-2xl text-Primary font-semibold font-Primary">$1,200</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex mt-1">
+                  <img src="./assets/img/HomePage/Section2/location.svg" alt="location" />
+                  <span class="text-[#3F484A] font-Primary pl-1">South Cove</span>
+                </div>
+                <span class="text-[#3F484A] text-[12px]">/night</span>
+              </div>
+              <button class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary 
+                font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 w-full mt-4">
+                Book Retreat
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex-col items-center bg-white rounded-[30px] shadow-xs relative">
+            <div class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full">
+              <img src="assets/img/HomePage/Section2/star.svg" alt="label" class="inline-block mr-1" />
+              <span class="text-[14px] font-Primary font-semibold">4.8</span>
+            </div>
+            <img class="w-full h-auto rounded-t-[30px]" src="./assets/img/HomePage/Section2/Home_LuxuryVillas_3.png" alt="Villa1" />
+            <div class="flex-col items-center py-8 px-8">
+              <div class="flex items-center justify-between">
+                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">Midnight Pearl Villa</h2>
+                <span class="text-2xl text-Primary font-semibold font-Primary">$690</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex mt-1">
+                  <img src="./assets/img/HomePage/Section2/location.svg" alt="location" />
+                  <span class="text-[#3F484A] font-Primary pl-1">West Terrace</span>
+                </div>
+                <span class="text-[#3F484A] text-[12px]">/night</span>
+              </div>
+              <button class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary 
+                font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 w-full mt-4">
+                Book Villa
+              </button>
+            </div>
+          </div>
+       </div>
+      </div>
     </section>
   </body>
 </html>
