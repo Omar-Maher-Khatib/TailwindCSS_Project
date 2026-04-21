@@ -3,178 +3,330 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summer Nap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Summer Nap - Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link href="./assets/css/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#F7FAFA]"">
+  <body class="bg-[#F7FAFA]">
     <header class="bg-white/70 fixed w-full z-10 backdrop-blur-sm">
-      <div class="container mx-auto flex items-center justify-between py-6 px-8">
+      <div
+        class="container mx-auto flex items-center justify-between py-6 px-8"
+      >
+        <div>
+          <img
+            src="./assets/img/header/menu.svg"
+            alt="Menu"
+            class="lg:hidden cursor-pointer flex"
+          />
+        </div>
         <!-- Left Side -->
-        <h3 class="text-Primary text-[24px] font-Primary font-semibold tracking-[4.8px]">AQUA ESCAPE</h3>
+        <h3
+          class="text-Primary text-[24px] font-Primary font-semibold tracking-[4.8px]"
+        >
+          AQUA ESCAPE
+        </h3>
 
         <!-- Middle Side -->
-        <ul class="flex space-x-8">
-          <li class="text-[16px] text-Primary font-Secondary underline decoration-2 underline-offset-7 font-semibold tracking-tighter"><a href="#">Home</a></li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Villas</a></li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Pools</a></li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Experiences</a></li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Drinks</a></li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary"><a href="#">Contact</a></li>
+        <ul class="space-x-4 hidden lg:flex xl:space-x-8">
+          <li
+            class="text-[16px] text-Primary font-Secondary underline decoration-2 underline-offset-7 font-semibold tracking-tighter"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="#">Villas</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="#">Pools</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="#">Experiences</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="#">Drinks</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="#">Contact</a>
+          </li>
         </ul>
 
         <!-- Right Side -->
         <div class="flex items-center space-x-6">
-          <ul class="flex space-x-4">
-            <li><a href="#"><img src="./assets/img/header/search.svg" alt="English" /></a></li>
-            <li><a href="#"><img src="./assets/img/header/heart.svg" alt="French" /></a></li>
-            <li><a href="#"><img src="./assets/img/header/person.svg" alt="German" /></a></li>
+          <ul class="space-x-4 hidden lg:flex">
+            <li>
+              <a href="#"
+                ><img src="./assets/img/header/search.svg" alt="English"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/img/header/heart.svg" alt="French"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/img/header/person.svg" alt="German"
+              /></a>
+            </li>
           </ul>
-          <button class="text-white bg-Primary py-3 px-8 text-[16px] font-Primary font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700">Book Now</button>
+          <button
+            class="text-white bg-Primary py-3 px-5 xl:px-8 text-[16px] font-Primary font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 hidden sm:block"
+          >
+            Book Now
+          </button>
         </div>
       </div>
     </header>
 
     <!-- Hero Section (1) -->
-    <section class="bg-[url(/assets/img/HomePage/Section1/Home_Hero.png)] bg-cover bg-center w-full h-200 relative">
+    <section
+      class="bg-[url(/assets/img/HomePage/Section1/Home_Hero.png)] bg-cover bg-center w-full h-200 relative"
+    >
       <div class="w-full h-full bg-linear-to-r from-black/30 to-transparent">
-        <div class="px-8 container mx-auto w-full h-full flex items-center justify-start">
+        <div
+          class="px-8 container mx-auto w-full h-full flex items-center justify-start"
+        >
           <div class="w-2xl">
-            <h6 class="text-[#FDDFA8] text-[16px] font-semibold tracking-[3.2px]">SUMMER 2026</h6>  
-            <h1 class="text-8xl/24 text-white font-extrabold font-Secondary tracking-tighter pt-4">Your perfect escape starts here</h1> 
-            <p class="w-md text-xl/7 text-white opacity-90 pt-6">Experience the ultimate shoreline luxury where the
-              ocean meets effortless elegance. Discover your
-              sanctuary by the sea.</p>
-            <button class="text-white bg-Primary py-4.25 px-10 text-[16px] font-Primary 
-                    font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 mt-10 mr-4">
-                    Book Now
+            <h6
+              class="text-[#FDDFA8] text-[16px] font-semibold tracking-[3.2px]"
+            >
+              SUMMER 2026
+            </h6>
+            <h1
+              class="text-8xl/24 text-white font-extrabold font-Secondary tracking-tighter pt-4"
+            >
+              Your perfect escape starts here
+            </h1>
+            <p class="w-md text-xl/7 text-white opacity-90 pt-6">
+              Experience the ultimate shoreline luxury where the ocean meets
+              effortless elegance. Discover your sanctuary by the sea.
+            </p>
+            <button
+              class="text-white bg-Primary py-4.25 px-10 text-[16px] font-Primary font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 mt-10 mr-4"
+            >
+              Book Now
             </button>
-           <button class="text-white bg-white/20 border border-white py-4 px-10 text-[16px] font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 mt-10 backdrop-blur-sm">
-            Explore Villas
-          </button>
+            <button
+              class="text-white bg-white/20 border border-white py-4 px-10 text-[16px] font-semibold rounded-[30px] cursor-pointer hover:bg-teal-700 mt-10 backdrop-blur-sm"
+            >
+              Explore Villas
+            </button>
           </div>
         </div>
-     </div> 
+      </div>
     </section>
 
     <!-- Luxury Villas Section (2) -->
     <section class="mt-24 container mx-auto flex items-center justify-start">
       <div class="w-full px-8">
         <!-- Title Of The Section -->
-       <h3 class="text-[16px] text-Primary font-Primary font-semibold tracking-[1.6px]">THE SANCTUARY</h3>
-       <div class="flex items-center justify-between w-full  flex-wrap gap-4">
-          <h1 class="text-5xl text-[#181C1D] font-bold font-Secondary pt-2">Luxury Villas</h1>
-          <div class="flex underline decoration-2 decoration-Primary underline-offset-7 items-center space-x-2 cursor-pointer">
-            <h3 class="text-Primary font-Primary font-semibold">View all properties</h3>
-            <img src="./assets/img/HomePage/Section2/arrow-right.svg" alt="arrow-right" />
+        <h3
+          class="text-[16px] text-Primary font-Primary font-semibold tracking-[1.6px]"
+        >
+          THE SANCTUARY
+        </h3>
+        <div class="flex items-center justify-between w-full flex-wrap gap-4">
+          <h1 class="text-5xl text-[#181C1D] font-bold font-Secondary pt-2">
+            Luxury Villas
+          </h1>
+          <div
+            class="flex underline decoration-2 decoration-Primary underline-offset-7 items-center space-x-2 cursor-pointer"
+          >
+            <h3 class="text-Primary font-Primary font-semibold">
+              View all properties
+            </h3>
+            <img
+              src="./assets/img/HomePage/Section2/arrow-right.svg"
+              alt="arrow-right"
+            />
           </div>
-       </div>
+        </div>
 
-       <!-- Cards Section -->
-       <div class="mt-16 mb-24 flex items-center justify-between w-full flex-wrap gap-4">
+        <!-- Cards Section -->
+        <div
+          class="mt-16 mb-24 flex items-center justify-between w-full flex-wrap gap-4"
+        >
           <!-- Card 1  -->
-          <div class="flex-col items-center bg-white rounded-[30px] shadow-xs relative">
-            <div class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full">
-              <img src="assets/img/HomePage/Section2/star.svg" alt="label" class="inline-block mr-1" />
+          <div
+            class="flex-col items-center bg-white rounded-[30px] shadow-xs relative"
+          >
+            <div
+              class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full"
+            >
+              <img
+                src="assets/img/HomePage/Section2/star.svg"
+                alt="label"
+                class="inline-block mr-1"
+              />
               <span class="text-[14px] font-Primary font-semibold">4.9</span>
             </div>
-            <img class="w-full h-auto rounded-t-[30px]" src="./assets/img/HomePage/Section2/Home_LuxuryVillas_1.png" alt="Villa1" />
+            <img
+              class="w-full h-auto rounded-t-[30px]"
+              src="./assets/img/HomePage/Section2/Home_LuxuryVillas_1.png"
+              alt="Villa1"
+            />
             <div class="flex-col items-center py-8 px-8">
               <div class="flex items-center justify-between">
-                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">Azure Horizon Suite</h2>
-                <span class="text-2xl text-Primary font-semibold font-Primary">$850</span>
+                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">
+                  Azure Horizon Suite
+                </h2>
+                <span class="text-2xl text-Primary font-semibold font-Primary"
+                  >$850</span
+                >
               </div>
               <div class="flex items-center justify-between">
                 <div class="flex mt-1">
-                  <img src="./assets/img/HomePage/Section2/location.svg" alt="location" />
-                  <span class="text-[#3F484A] font-Primary pl-1">North Shore</span>
+                  <img
+                    src="./assets/img/HomePage/Section2/location.svg"
+                    alt="location"
+                  />
+                  <span class="text-[#3F484A] font-Primary pl-1"
+                    >North Shore</span
+                  >
                 </div>
                 <span class="text-[#3F484A] text-[12px]">/night</span>
               </div>
-              <button class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary 
-                font-semibold rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white w-full mt-4">
+              <button
+                class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary font-semibold rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white w-full mt-4"
+              >
                 Book Suite
               </button>
             </div>
           </div>
 
           <!-- Card 2  -->
-          <div class="flex-col items-center bg-white rounded-[30px] shadow-xs relative">
-            <div class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full">
-              <img src="assets/img/HomePage/Section2/star.svg" alt="label" class="inline-block mr-1" />
+          <div
+            class="flex-col items-center bg-white rounded-[30px] shadow-xs relative"
+          >
+            <div
+              class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full"
+            >
+              <img
+                src="assets/img/HomePage/Section2/star.svg"
+                alt="label"
+                class="inline-block mr-1"
+              />
               <span class="text-[14px] font-Primary font-semibold">5.0</span>
             </div>
-            <img class="w-full h-auto rounded-t-[30px]" src="./assets/img/HomePage/Section2/Home_LuxuryVillas_2.png" alt="Villa1" />
+            <img
+              class="w-full h-auto rounded-t-[30px]"
+              src="./assets/img/HomePage/Section2/Home_LuxuryVillas_2.png"
+              alt="Villa1"
+            />
             <div class="flex-col items-center py-8 px-8">
               <div class="flex items-center justify-between">
-                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">The Coral Retreat</h2>
-                <span class="text-2xl text-Primary font-semibold font-Primary">$1,200</span>
+                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">
+                  The Coral Retreat
+                </h2>
+                <span class="text-2xl text-Primary font-semibold font-Primary"
+                  >$1,200</span
+                >
               </div>
               <div class="flex items-center justify-between">
                 <div class="flex mt-1">
-                  <img src="./assets/img/HomePage/Section2/location.svg" alt="location" />
-                  <span class="text-[#3F484A] font-Primary pl-1">South Cove</span>
+                  <img
+                    src="./assets/img/HomePage/Section2/location.svg"
+                    alt="location"
+                  />
+                  <span class="text-[#3F484A] font-Primary pl-1"
+                    >South Cove</span
+                  >
                 </div>
                 <span class="text-[#3F484A] text-[12px]">/night</span>
               </div>
-              <button class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary 
-                font-semibold rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white w-full mt-4">
+              <button
+                class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary font-semibold rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white w-full mt-4"
+              >
                 Book Retreat
               </button>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="flex-col items-center bg-white rounded-[30px] shadow-xs relative">
-            <div class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full">
-              <img src="assets/img/HomePage/Section2/star.svg" alt="label" class="inline-block mr-1" />
+          <div
+            class="flex-col items-center bg-white rounded-[30px] shadow-xs relative"
+          >
+            <div
+              class="flex items-center justify-center absolute top-6 right-6 bg-[#F1F4F4] py-2 px-4 rounded-full"
+            >
+              <img
+                src="assets/img/HomePage/Section2/star.svg"
+                alt="label"
+                class="inline-block mr-1"
+              />
               <span class="text-[14px] font-Primary font-semibold">4.8</span>
             </div>
-            <img class="w-full h-auto rounded-t-[30px]" src="./assets/img/HomePage/Section2/Home_LuxuryVillas_3.png" alt="Villa1" />
+            <img
+              class="w-full h-auto rounded-t-[30px]"
+              src="./assets/img/HomePage/Section2/Home_LuxuryVillas_3.png"
+              alt="Villa1"
+            />
             <div class="flex-col items-center py-8 px-8">
               <div class="flex items-center justify-between">
-                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">Midnight Pearl Villa</h2>
-                <span class="text-2xl text-Primary font-semibold font-Primary">$690</span>
+                <h2 class="text-2xl text-[#181C1D] font-bold font-Secondary">
+                  Midnight Pearl Villa
+                </h2>
+                <span class="text-2xl text-Primary font-semibold font-Primary"
+                  >$690</span
+                >
               </div>
               <div class="flex items-center justify-between">
                 <div class="flex mt-1">
-                  <img src="./assets/img/HomePage/Section2/location.svg" alt="location" />
-                  <span class="text-[#3F484A] font-Primary pl-1">West Terrace</span>
+                  <img
+                    src="./assets/img/HomePage/Section2/location.svg"
+                    alt="location"
+                  />
+                  <span class="text-[#3F484A] font-Primary pl-1"
+                    >West Terrace</span
+                  >
                 </div>
                 <span class="text-[#3F484A] text-[12px]">/night</span>
               </div>
-              <button class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary 
-                font-semibold rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white w-full mt-4">
+              <button
+                class="text-Primary bg-[#F1F4F4] py-4 text-[16px] font-Primary font-semibold rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white w-full mt-4"
+              >
                 Book Villa
               </button>
             </div>
           </div>
-       </div>
+        </div>
       </div>
     </section>
 
     <!-- Pools & Day Passes Section (3) -->
     <section class="py-24 bg-[#F1F4F4]">
       <!-- Title Of The Section -->
-      <div class="w-full px-8 container mx-auto flex-col items-center justify-start">
-        <h3 class="font-Primary font-semibold text-Primary text-[16px] tracking-[1.6px]">COOLING OFF</h3>
-        <h1 class="font-Secondary font-bold text-5xl text-[#181C1D] pt-2">Pools & Day Passes</h1>
+      <div
+        class="w-full px-8 container mx-auto flex-col items-center justify-start"
+      >
+        <h3
+          class="font-Primary font-semibold text-Primary text-[16px] tracking-[1.6px]"
+        >
+          COOLING OFF
+        </h3>
+        <h1 class="font-Secondary font-bold text-5xl text-[#181C1D] pt-2">
+          Pools & Day Passes
+        </h1>
       </div>
-      
+
       <!-- Cards Section -->
       <div class="flex flex-wrap gap-8 items-center justify-center px-8 py-12">
-
         <!-- Card 1 -->
         <div class="flex-col items-center justify-center">
           <div class="relative w-full overflow-hidden rounded-[30px]">
-            <img 
-              src="./assets/img/HomePage/Section3/Home_Pools_1.png" 
-              alt="Main Infinity Pool" 
+            <img
+              src="./assets/img/HomePage/Section3/Home_Pools_1.png"
+              alt="Main Infinity Pool"
               class="h-full w-full object-cover"
             />
-            <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+            ></div>
             <div class="absolute bottom-0 left-0 w-full p-8 pb-10">
               <h2 class="font-Secondary text-3xl font-bold text-white">
                 Main Infinity Pool
@@ -186,10 +338,14 @@
           </div>
           <div class="w-full mt-6 py-6 px-8 bg-white rounded-[30px] shadow-xs">
             <div class="w-full flex items-center justify-between">
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 Day Pass
               </span>
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 CAPACITY
               </span>
             </div>
@@ -207,12 +363,14 @@
         <!-- Card 2 -->
         <div class="flex-col items-center justify-center">
           <div class="relative w-full overflow-hidden rounded-[30px]">
-            <img 
-              src="./assets/img/HomePage/Section3/Home_Pools_2.png" 
-              alt="Main Infinity Pool" 
+            <img
+              src="./assets/img/HomePage/Section3/Home_Pools_2.png"
+              alt="Main Infinity Pool"
               class="h-full w-full object-cover"
             />
-            <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+            ></div>
             <div class="absolute bottom-0 left-0 w-full p-8 pb-10">
               <h2 class="font-Secondary text-3xl font-bold text-white">
                 The Jungle Grotto
@@ -224,10 +382,14 @@
           </div>
           <div class="w-full mt-6 py-6 px-8 bg-white rounded-[30px] shadow-xs">
             <div class="w-full flex items-center justify-between">
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 Day Pass
               </span>
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 CAPACITY
               </span>
             </div>
@@ -245,12 +407,14 @@
         <!-- Card 3 -->
         <div class="flex-col items-center justify-center">
           <div class="relative w-full overflow-hidden rounded-[30px]">
-            <img 
-              src="./assets/img/HomePage/Section3/Home_Pools_3.png" 
-              alt="Main Infinity Pool" 
+            <img
+              src="./assets/img/HomePage/Section3/Home_Pools_3.png"
+              alt="Main Infinity Pool"
               class="h-full w-full object-cover"
             />
-            <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+            ></div>
             <div class="absolute bottom-0 left-0 w-full p-8 pb-10">
               <h2 class="font-Secondary text-3xl font-bold text-white">
                 Sunset Skybar Pool
@@ -262,10 +426,14 @@
           </div>
           <div class="w-full mt-6 py-6 px-8 bg-white rounded-[30px] shadow-xs">
             <div class="w-full flex items-center justify-between">
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 Day Pass
               </span>
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 CAPACITY
               </span>
             </div>
@@ -283,12 +451,14 @@
         <!-- Card 4 -->
         <div class="flex-col items-center justify-center">
           <div class="relative w-full overflow-hidden rounded-[30px]">
-            <img 
-              src="./assets/img/HomePage/Section3/Home_Pools_4.png" 
-              alt="Main Infinity Pool" 
+            <img
+              src="./assets/img/HomePage/Section3/Home_Pools_4.png"
+              alt="Main Infinity Pool"
               class="h-full w-full object-cover"
             />
-            <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+            ></div>
             <div class="absolute bottom-0 left-0 w-full p-8 pb-10">
               <h2 class="font-Secondary text-3xl font-bold text-white">
                 Family Oasis
@@ -300,10 +470,14 @@
           </div>
           <div class="w-full mt-6 py-6 px-8 bg-white rounded-[30px] shadow-xs">
             <div class="w-full flex items-center justify-between">
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 Day Pass
               </span>
-              <span class="font-Primary font-semibold text-[12px] text-[#3F484A]">
+              <span
+                class="font-Primary font-semibold text-[12px] text-[#3F484A]"
+              >
                 CAPACITY
               </span>
             </div>
@@ -318,60 +492,103 @@
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- Signature Experiences Section (4) -->
-     <section class="mt-24 pb-24 w-full">
-        <!-- Title Of The Section -->
-        <div class="pb-12 flex flex-col items-center justify-center">
-          <h2 class="font-Primary font-semibold text-Primary text-[16px] tracking-[1.6px] mb-2">CREATE MEMORIES</h2>
-          <h1 class="font-Secondary font-bold text-[#181C1D] text-5xl">Signature Experiences</h1>
-        </div> 
+    <section class="mt-24 pb-24 w-full">
+      <!-- Title Of The Section -->
+      <div class="pb-12 flex flex-col items-center justify-center">
+        <h2
+          class="font-Primary font-semibold text-Primary text-[16px] tracking-[1.6px] mb-2"
+        >
+          CREATE MEMORIES
+        </h2>
+        <h1 class="font-Secondary font-bold text-[#181C1D] text-5xl">
+          Signature Experiences
+        </h1>
+      </div>
 
-        <!-- Cards Section -->
-        <div class="container w-full mx-auto">
-          <div class="flex flex-wrap gap-6 items-center justify-center ">
+      <!-- Cards Section -->
+      <div class="container w-full mx-auto">
+        <div class="flex flex-wrap gap-6 items-center justify-center">
+          <div class="relative overflow-hidden rounded-[30px]">
+            <img
+              src="assets/img/HomePage/Section4/Home_Signature_1.png"
+              alt="Experience 1"
+              class="object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute left-0 bottom-0 pl-10 pb-10">
+              <h3 class="text-white text-3xl font-Secondary font-bold pb-2">
+                Gourmet BBQ Nights
+              </h3>
+              <p class="text-white/80 text-[16px] font-Primary">
+                Every Tuesday & Friday on the Shore
+              </p>
+              <button
+                class="text-Primary text-[14px] font-Primary font-semibold bg-white py-2 px-6 rounded-[30px] mt-6 cursor-pointer hover:bg-Primary hover:text-white"
+              >
+                Join the Feast
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-col items-center justify-center">
             <div class="relative overflow-hidden rounded-[30px]">
-              <img src="assets/img/HomePage/Section4/Home_Signature_1.png" alt="Experience 1" class=" object-cover" />
-              <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent "></div>
-              <div class="absolute left-0 bottom-0 pl-10 pb-10">
-                <h3 class="text-white text-3xl font-Secondary font-bold pb-2">Gourmet BBQ Nights</h3>
-                <p class="text-white/80 text-[16px] font-Primary">Every Tuesday & Friday on the Shore</p>
-                <button class="text-Primary text-[14px] font-Primary font-semibold bg-white py-2 px-6 rounded-[30px] mt-6 cursor-pointer hover:bg-Primary hover:text-white">
-                  Join the Feast
-                </button>
+              <img
+                src="assets/img/HomePage/Section4/Home_Signature_2.png"
+                alt="Experience 2"
+                class="object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"
+              ></div>
+              <div class="absolute left-0 bottom-0 pl-8 pb-8">
+                <h3 class="text-white text-2xl font-Secondary font-bold">
+                  Electric Pool Parties
+                </h3>
+                <p class="text-white/80 text-[16px] font-Primary">
+                  World-class DJs and Signature Cocktails
+                </p>
               </div>
             </div>
-
-            <div class="flex-col items-center justify-center">
+            <div class="flex items-center justify-center gap-6">
               <div class="relative overflow-hidden rounded-[30px]">
-                <img src="assets/img/HomePage/Section4/Home_Signature_2.png" alt="Experience 2" class="object-cover" />
-                <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
-                <div class= "absolute left-0 bottom-0 pl-8 pb-8" >
-                   <h3 class="text-white text-2xl font-Secondary font-bold">Electric Pool Parties</h3>
-                   <p class="text-white/80 text-[16px] font-Primary">World-class DJs and Signature Cocktails</p>
+                <img
+                  src="assets/img/HomePage/Section4/Home_Signature_3.png"
+                  alt="Experience 3"
+                  class="rounded-[30px] mt-6 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent rounded-[30px]"
+                ></div>
+                <div class="absolute left-0 bottom-0 pl-6 pb-6">
+                  <h3 class="text-white text-xl font-Secondary font-bold">
+                    Sunset Yoga
+                  </h3>
                 </div>
               </div>
-              <div class="flex items-center justify-center gap-6">
-                 <div class="relative overflow-hidden rounded-[30px]">
-                  <img src="assets/img/HomePage/Section4/Home_Signature_3.png" alt="Experience 3" class="rounded-[30px] mt-6 object-cover" />
-                  <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent rounded-[30px]"></div>
-                  <div class="absolute left-0 bottom-0 pl-6 pb-6"> 
-                    <h3 class="text-white text-xl font-Secondary font-bold">Sunset Yoga</h3>
-                  </div>
-                 </div>
-                 <div class="relative overflow-hidden rounded-[30px]">
-                  <img src="assets/img/HomePage/Section4/Home_Signature_4.png" alt="Experience 4" class="rounded-[30px] mt-6 object-cover" />
-                  <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent rounded-[30px]"></div>
-                  <div class="absolute left-0 bottom-0 pl-6 pb-6"> 
-                    <h3 class="text-white text-xl font-Secondary font-bold">Private Events</h3>
-                  </div>
-                 </div>
+              <div class="relative overflow-hidden rounded-[30px]">
+                <img
+                  src="assets/img/HomePage/Section4/Home_Signature_4.png"
+                  alt="Experience 4"
+                  class="rounded-[30px] mt-6 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent rounded-[30px]"
+                ></div>
+                <div class="absolute left-0 bottom-0 pl-6 pb-6">
+                  <h3 class="text-white text-xl font-Secondary font-bold">
+                    Private Events
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-     </section>
+      </div>
+    </section>
   </body>
 </html>
