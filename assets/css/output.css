@@ -40,6 +40,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --tracking-tighter: -0.05em;
+    --tracking-normal: 0em;
     --blur-sm: 8px;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -209,6 +210,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-2 {
     top: calc(var(--spacing) * 2);
   }
@@ -320,6 +324,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -353,6 +360,9 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
   .-mb-0 {
     margin-bottom: calc(var(--spacing) * -0);
   }
@@ -365,11 +375,23 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .mb-24 {
     margin-bottom: calc(var(--spacing) * 24);
+  }
+  .mb-\[32px\] {
+    margin-bottom: 32px;
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
@@ -407,6 +429,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-75 {
+    width: calc(var(--spacing) * 75);
+  }
   .w-\[2\] {
     width: 2;
   }
@@ -436,6 +461,9 @@
   }
   .w-\[100\] {
     width: 100;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[calc\] {
     width: calc;
@@ -473,14 +501,26 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
   .items-start {
     align-items: flex-start;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
   }
   .justify-start {
     justify-content: flex-start;
@@ -493,6 +533,9 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -558,6 +601,22 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-\[\#BEC8CA\] {
+    border-color: #BEC8CA;
+  }
+  .border-\[\#BEC8CA\]\/20 {
+    border-color: color-mix(in oklab, #BEC8CA 20%, transparent);
+  }
+  .border-\[\#E0E0E0\] {
+    border-color: #E0E0E0;
+  }
+  .border-\[BEC8CA\] {
+    border-color: BEC8CA;
   }
   .border-white {
     border-color: var(--color-white);
@@ -671,6 +730,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -731,6 +793,9 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
@@ -748,6 +813,9 @@
   }
   .pt-4\.5 {
     padding-top: calc(var(--spacing) * 4.5);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
@@ -881,6 +949,10 @@
     font-size: 12px;
     line-height: calc(var(--spacing) * 12);
   }
+  .text-\[16px\]\/0 {
+    font-size: 16px;
+    line-height: calc(var(--spacing) * 0);
+  }
   .text-\[16px\]\/1 {
     font-size: 16px;
     line-height: calc(var(--spacing) * 1);
@@ -904,6 +976,26 @@
   .text-\[16px\]\/5 {
     font-size: 16px;
     line-height: calc(var(--spacing) * 5);
+  }
+  .text-\[16px\]\/6 {
+    font-size: 16px;
+    line-height: calc(var(--spacing) * 6);
+  }
+  .text-\[16px\]\/7 {
+    font-size: 16px;
+    line-height: calc(var(--spacing) * 7);
+  }
+  .text-\[16px\]\/8 {
+    font-size: 16px;
+    line-height: calc(var(--spacing) * 8);
+  }
+  .text-\[16px\]\/9 {
+    font-size: 16px;
+    line-height: calc(var(--spacing) * 9);
+  }
+  .text-\[16px\]\/20 {
+    font-size: 16px;
+    line-height: calc(var(--spacing) * 20);
   }
   .text-\[18px\]\/2 {
     font-size: 18px;
@@ -980,6 +1072,9 @@
   .text-\[48px\] {
     font-size: 48px;
   }
+  .text-\[350px\] {
+    font-size: 350px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -1000,6 +1095,10 @@
     --tw-font-weight: var(--font-weight-thin);
     font-weight: var(--font-weight-thin);
   }
+  .tracking-\[0\.35px\] {
+    --tw-tracking: 0.35px;
+    letter-spacing: 0.35px;
+  }
   .tracking-\[1\.2px\] {
     --tw-tracking: 1.2px;
     letter-spacing: 1.2px;
@@ -1012,6 +1111,10 @@
     --tw-tracking: 1px;
     letter-spacing: 1px;
   }
+  .tracking-\[2px\] {
+    --tw-tracking: 2px;
+    letter-spacing: 2px;
+  }
   .tracking-\[3\.2px\] {
     --tw-tracking: 3.2px;
     letter-spacing: 3.2px;
@@ -1019,6 +1122,14 @@
   .tracking-\[4\.8px\] {
     --tw-tracking: 4.8px;
     letter-spacing: 4.8px;
+  }
+  .tracking-\[normal\] {
+    --tw-tracking: normal;
+    letter-spacing: normal;
+  }
+  .tracking-normal {
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
   }
   .tracking-tighter {
     --tw-tracking: var(--tracking-tighter);
@@ -1038,6 +1149,9 @@
   }
   .text-\[\#FDDFA8\] {
     color: #FDDFA8;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .text-\[1\] {
     color: 1;
@@ -1161,6 +1275,11 @@
   .sm\:mx-\[10\%\] {
     @media (width >= 40rem) {
       margin-inline: 10%;
+    }
+  }
+  .sm\:mx-auto {
+    @media (width >= 40rem) {
+      margin-inline: auto;
     }
   }
   .sm\:mt-0 {
@@ -1375,6 +1494,11 @@
   .\32 xl\:justify-between {
     @media (width >= 96rem) {
       justify-content: space-between;
+    }
+  }
+  .\32 xl\:p-20 {
+    @media (width >= 96rem) {
+      padding: calc(var(--spacing) * 20);
     }
   }
   .\32 xl\:px-96 {
