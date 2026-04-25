@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Summer Nap - Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/output.css" rel="stylesheet" />
+</head>
+<body class="bg-[#F7FAFA] overflow-hidden">
+    <!-- header -->
+    <header class="bg-white fixed w-full z-10">
+      <div
+        class="container mx-auto flex items-center justify-between py-6 px-8"
+      >
+        <div class="lg:hidden cursor-pointer flex">
+          <img
+            src="./assets/img/header/menu.svg"
+            alt="Menu"
+          />
+        </div>
+        <!-- Left Side -->
+        <h3
+          class="text-Primary text-[24px] font-Primary font-semibold tracking-[1px] sm:tracking-[4.8px]"
+        >
+          AQUA ESCAPE
+        </h3>
+
+        <!-- Middle Side -->
+        <ul class="space-x-4 hidden lg:flex xl:space-x-8">
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="./villas.html">Villas</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="./pools.html">Pools</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="./experiences.html">Experiences</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="./drinks.html">Drinks</a>
+          </li>
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right Side -->
+        <div class="items-center space-x-6  hidden lg:flex">
+          <ul class="space-x-4 flex">
+            <li>
+              <a href="./favorites.html"
+                ><img src="./assets/img/header/heart.svg" alt="Favorites"
+              /></a>
+            </li>
+            <li>
+              <a href="./booking_cart.html"
+                ><img src="./assets/img/Login/cart.svg" alt="cart"
+              /></a>
+            </li>
+          </ul>
+          <button
+            class="text-white bg-Primary py-3 px-5 xl:px-8 text-[16px] font-Primary font-semibold 
+            rounded-[30px] cursor-pointer hover:bg-teal-700"
+            >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="w-full">
+     <div class="flex">
+     <!-- Picture Side -->
+      <div class="w-1/2 relative h-screen">
+        <!-- Background image -->
+        <div class="absolute inset-0 bg-[url('/assets/img/Login/Login.png')] bg-cover bg-center"></div>
+        <!-- Gradient overlay -->
+        <div class="absolute inset-0 bg-linear-to-r from-Primary/40 to-transparent"></div>
+        <!-- Content -->
+        <div class="relative p-20 h-full flex items-end">
+          <div>
+            <span class="font-Primary text-white text-[11px] tracking-[0.88px]">ESCAPE TO SERENITY</span>
+            <h1 class="font-Secondary font-extrabold text-[48px]/16 text-white mt-4">
+              Where the ocean <br> meets the horizon.
+            </h1>
+            <p class="font-Primary text-white/80 text-[18px]/7 mt-4">
+              Log in to access your private sanctuary and manage <br>
+              your curated coastal experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Login Form Side -->
+      <div class="w-1/2 h-screen flex items-center justify-center p-20">
+        <div clas="w-full">
+          <h2>Login</h2>
+          <p>Please enter your details to continue</p>
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full border border-gray-300 rounded-md px-4 py-2 mt-4 focus:outline-none focus:ring-2 focus:ring-Primary"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full border border-gray-300 rounded-md px-4 py-2 mt-4 focus:outline-none focus:ring-2 focus:ring-Primary"
+          />
+        </div>
+      </div>
+     </div>
+    </section>
+  </body>
+</html>
