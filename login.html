@@ -99,21 +99,34 @@
           </div>
         </div>
       </div>
+
       <!-- Login Form Side -->
-      <div class="w-1/2 h-screen flex items-center justify-center p-20">
-        <div clas="w-full">
-          <h2>Login</h2>
-          <p>Please enter your details to continue</p>
-          <input
-            type="email"
-            placeholder="Email"
-            class="w-full border border-gray-300 rounded-md px-4 py-2 mt-4 focus:outline-none focus:ring-2 focus:ring-Primary"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            class="w-full border border-gray-300 rounded-md px-4 py-2 mt-4 focus:outline-none focus:ring-2 focus:ring-Primary"
-          />
+      <div class="w-1/2 h-screen flex items-center justify-center">
+        <div class="w-full flex flex-col p-64">
+          <div class="flex flex-col items-start mb-10">
+            <h2 class="font-Secondary font-extrabold text-[30px] text-[#181C1D] mb-2">Login</h2>
+            <p class="font-Primary text-[#3F484A]">Please enter your details to continue</p>
+          </div>
+          <div class="w-full flex flex-col">
+            <span class="font-Primary text-[#3F484A] text-[11px] tracking-[0.88px]">EMAIL ADDRESS</span>
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full rounded-[40px] px-4 py-4.5 text-[#6F797A]/50"
+            />
+            <div class="flex items-center justify-between mt-4">
+              <span class="font-Primary text-[#3F484A] text-[11px] tracking-[0.88px]">PASSWORD</span> 
+              <span class="font-Primary font-semibold text-Primary text-[11px] tracking-[0.88px]">FORGOT PASSWORD?</span>
+            </div>
+            <input
+              type="password"
+              placeholder="Password"
+              class="w-full rounded-[40px] px-4 py-4.5 text-[#6F797A]/50 "
+            />
+          </div>
+          <label class="flex items-center gap-2 font-Primary text-[14px] text-[#3F484A] mt-8">
+            <input type="checkbox" class="w-4 h-4 "> Keep me logged in for 30 days
+          </label>
         </div>
       </div>
      </div>
