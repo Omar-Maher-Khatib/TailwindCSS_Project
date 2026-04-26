@@ -101,7 +101,7 @@
       </div>
 
       <!-- Login Form Side -->
-      <div class="w-1/2 h-screen flex items-center justify-center">
+      <div class="w-1/2 h-screen flex items-center justify-center relative">
         <div class="w-full flex flex-col p-64">
           <div class="flex flex-col items-start mb-10">
             <h2 class="font-Secondary font-extrabold text-[30px] text-[#181C1D] mb-2">Login</h2>
@@ -111,23 +111,31 @@
             <span class="font-Primary text-[#3F484A] text-[11px] tracking-[0.88px]">EMAIL ADDRESS</span>
             <input
               type="email"
-              placeholder="Email"
-              class="w-full rounded-[40px] px-4 py-4.5 text-[#6F797A]/50"
+              placeholder="name@example.com"
+              class="w-full rounded-[30px] px-4 py-4.5 text-[#6F797A]/50 bg-[#F1F4F4] mt-2"
             />
-            <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center justify-between mt-6">
               <span class="font-Primary text-[#3F484A] text-[11px] tracking-[0.88px]">PASSWORD</span> 
               <span class="font-Primary font-semibold text-Primary text-[11px] tracking-[0.88px]">FORGOT PASSWORD?</span>
             </div>
             <input
               type="password"
-              placeholder="Password"
-              class="w-full rounded-[40px] px-4 py-4.5 text-[#6F797A]/50 "
+              placeholder="••••••••"
+              class="w-full rounded-[30px] px-4 py-4.5 text-[#6F797A]/50 bg-[#F1F4F4] mt-2"
             />
+            <label class="flex items-center gap-2 font-Primary text-[14px] text-[#3F484A] mt-8">
+             <input type="checkbox" class="w-4 h-4 "> Keep me logged in for 30 days
+            </label>
+            <button
+              class="w-full bg-Primary text-white py-4 rounded-[30px] mt-8 text-[16px] font-Primary font-semibold hover:bg-teal-700">
+              Sign In
+            </button>
           </div>
-          <label class="flex items-center gap-2 font-Primary text-[14px] text-[#3F484A] mt-8">
-            <input type="checkbox" class="w-4 h-4 "> Keep me logged in for 30 days
-          </label>
+          <div class="mt-10 pt-10 border-t border-gray-100 flex items-center justify-center">
+            <p>Don't have an account? <a href="#" class="text-Primary font-semibold hover:underline">Sign up</a></p>
+          </div>
         </div>
+        <div class="absolute right-8 bottom-[23.5px] text-[#3F484A] text-[10px] tracking-[1.5px] font-Primary">© 2024 AQUA ESCAPE RESORT. THE ETHEREAL SHORELINE.</div>
       </div>
      </div>
     </section>
