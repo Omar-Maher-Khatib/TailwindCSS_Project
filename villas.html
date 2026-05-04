@@ -12,9 +12,9 @@
     />
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
-<body>
+<body class="bg-[#f7fafa]">
     <!-- header -->
-    <header class="bg-white/70 fixed w-full z-10 backdrop-blur-sm">
+    <header class="bg-white w-full shadow-sm">
       <div
         class="container mx-auto flex items-center justify-between py-6 px-8"
       >
@@ -85,6 +85,154 @@
         </div>
       </div>
     </header>
-    
+
+    <!-- main -->
+    <section class="w-full">
+      <div class="container flex-col items-center justify-start mx-auto px-8">
+         <!-- Title-->
+        <div class="pt-7 pb-11">
+          <span class="py-1 font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">OUR COLLECTION</span>
+          <h1 class="py-1 font-Secondary font-extrabold text-[48px] text-[#181C1D] tracking-tight">Ethereal Coastal Villas</h1>
+          <p class="py-1 font-Primary text-[18px] text-[#3F484A]">Discover a curated selection of architectural masterpieces nestled along the <br>
+            pristine shoreline, where luxury meets the boundless horizon.</p>
+        </div>
+        <!-- Villas Grid -->
+        <div class="container flex gap-4">
+          <!-- filters -->
+          <div class="flex flex-col items-start w-1/4">
+            <!-- Location Filter -->
+            <span class="font-Secondary font-bold text-[14px] text-[#181C1D] uppercase">Location</span>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] my-3">
+              <input type="checkbox" checked class="w-4 h-4"> Aegean Coast
+            </label>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] mb-3">
+              <input type="checkbox" class="w-4 h-4 "> Ionian Shores
+            </label>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A]">
+              <input type="checkbox" class="w-4 h-4 "> Riviera Bay
+            </label>
+
+            <!-- Price Filter -->
+            <span class="font-Secondary font-bold text-[14px] text-[#181C1D] tracking-[1.4px] mt-10 uppercase">Price Range</span>
+            <div class="w-full px-2">
+              <input 
+                type="range" 
+                min="500" 
+                max="5000" 
+                class="w-full h-1 bg-gray-300 rounded-lg appearance-none cursor-pointer mt-4"
+              >
+              <div class="flex justify-between w-full mt-3 text-lg text-gray-700">
+                <span>$500</span>
+                <span>$5,000+</span>
+              </div>
+            </div>
+
+            <!-- Guests FiLter -->
+            <span class="font-Secondary font-bold text-[14px] text-[#181C1D] tracking-[1.4px] mt-10 uppercase">Guests</span>
+            <div class="rounded-[15px] bg-[#F1F4F4] flex items-center justify-center gap-5 py-5 px-4 w-full mt-4">
+              <span class="font-Primary text-[#3F484A]">Number of Guests</span>
+              <div class="flex items-center gap-3">
+                <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">-</span>
+                <span class="font-Primary text-[#3F484A]">2</span>
+                <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">+</span>
+              </div>
+            </div>
+
+            <!-- Amenities Filter -->
+            <span class="font-Secondary font-bold text-[14px] text-[#181C1D] uppercase mt-10">Amenities</span>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] my-3">
+              <input type="checkbox" checked class="w-4 h-4">
+              <img src="./assets/img/VillaListings/pool.svg" alt="Pool Icon" class="w-4 h-4">
+               Pool
+            </label>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] mb-3">
+              <input type="checkbox" class="w-4 h-4 "> 
+              <img src="./assets/img/VillaListings/wifi.svg" alt="WiFi Icon" class="w-4 h-4">
+               WiFi
+            </label>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] mb-3">
+              <input type="checkbox" class="w-4 h-4 "> 
+              <img src="./assets/img/VillaListings/bbq.svg" alt="BBQ Icon" class="w-4 h-4">
+               BBQ
+            </label>
+            <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A]">
+              <input type="checkbox" checked class="w-4 h-4 "> 
+              <img src="./assets/img/VillaListings/sea view.svg" alt="Sea View Icon" class="w-4 h-4">
+               Sea view
+            </label>
+
+            <!-- Minimum Rating -->
+            <span class="font-Secondary font-bold text-[14px] text-[#181C1D] uppercase mt-10">Minimum Rating</span>
+            <div class="flex items-center justify-center gap-2 mt-4">
+              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.0+</span>
+              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.5+</span>
+              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.8+</span>
+            </div>
+          </div>
+
+          <!-- villa cards -->
+           <div></div>
+        </div>  
+    </section>
+
+    <footer class="mt-20 w-full bg-[#F1F4F4]">
+      <div class="p-4 xl:p-20  pb-0 xl:mx-[10%] mx-[2%] flex items-start justify-between flex-wrap gap-12">
+        <!-- Column 1 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[20px] tracking-[2px] mb-8">AQUA ESCAPE</h2>
+            <p class="text-[#5F6F73] text-[16px]/6 font-Primary mb-8">Crafting ethereal shoreline memories <br>
+              since 2018. Your sanctuary of luxury <br>
+              and peace.</p>
+            <div class="flex items-center">
+              <img src="assets/img/footer/earth.svg" alt="earth" class="mr-4"/>
+              <img src="assets/img/footer/social.svg" alt="social" class="mr-4"/>
+              <img src="assets/img/footer/message.svg" alt="message"/>
+            </div>
+         </div>
+
+          <!-- Column 2 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[18px] mb-6">Resort</h2>
+            <ul class="flex-col items-start text-[#5F6F73] text-[16px]/6 font-Primary">
+              <li class="mb-4">Sustainability</li>
+              <li class="mb-4">Private Charter</li>
+              <li class="mb-4">Concierge</li>
+              <li class="mb-4">Press</li>
+              <li>Legal</li>
+            </ul>
+         </div>
+
+          <!-- Column 3 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[18px] mb-6">Destinations</h2>
+            <ul class="flex-col items-start text-[#5F6F73] text-[16px]/6 font-Primary">
+              <li class="mb-4">North Shore Villas</li>
+              <li class="mb-4">The Cove Retreat</li>
+              <li class="mb-4">Beachfront Suites</li>
+              <li >Mountain Hideaways</li>
+            </ul>
+         </div>
+
+          <!-- Column 4 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[18px] mb-6">Contact Us</h2>
+            <ul class="flex-col items-start text-[#5F6F73] text-[16px]/6 font-Primary mb-6">
+              <li>123 Azure Drive, Shoreline Bay</li>
+              <li>hello@aquaescape.com</li>
+              <li>+1 (555) 000-8888</li>
+            </ul>
+            <div class="flex items-center">
+              <img src="assets/img/footer/visa.svg" alt="visa" class="mr-4"/>
+              <img src="assets/img/footer/cash.svg" alt="cash" class="mr-4"/>
+              <img src="assets/img/footer/wallet.svg" alt="wallet"/>
+            </div>
+         </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="w-full mt-20 pb-10 flex items-end justify-center text-center border-t border-[#BEC8CA]/20">
+        <p class="mt-10 text-[14px] text-[#5F6F73] font-Primary tracking-[0.35px]">© 2026 AQUA ESCAPE RESORT. THE ETHEREAL SHORELINE. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
 </body>
 </html>
