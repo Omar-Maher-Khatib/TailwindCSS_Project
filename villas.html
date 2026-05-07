@@ -88,7 +88,7 @@
 
     <!-- main -->
     <section class="w-full">
-      <div class="container flex-col items-center justify-start mx-auto px-8">
+      <div class="container flex-col items-center justify-start mx-auto md:px-8 px-5">
          <!-- Title-->
         <div class="pt-7 pb-11">
           <span class="py-1 font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">OUR COLLECTION</span>
@@ -98,18 +98,19 @@
         </div>
         <!-- Villas Grid -->
         <div class="container flex gap-4">
+
           <!-- filters -->
-          <div class="flex flex-col items-start w-1/4">
+          <div class="sm:flex hidden flex-col items-start w-1/4">
             <!-- Location Filter -->
             <span class="font-Secondary font-bold text-[14px] text-[#181C1D] uppercase">Location</span>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] my-3">
-              <input type="checkbox" checked class="w-4 h-4"> Aegean Coast
+              <input type="checkbox" checked class="w-4 h-4 cursor-pointer"> Aegean Coast
             </label>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] mb-3">
-              <input type="checkbox" class="w-4 h-4 "> Ionian Shores
+              <input type="checkbox" class="w-4 h-4 cursor-pointer"> Ionian Shores
             </label>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A]">
-              <input type="checkbox" class="w-4 h-4 "> Riviera Bay
+              <input type="checkbox" class="w-4 h-4 cursor-pointer"> Riviera Bay
             </label>
 
             <!-- Price Filter -->
@@ -129,9 +130,9 @@
 
             <!-- Guests FiLter -->
             <span class="font-Secondary font-bold text-[14px] text-[#181C1D] tracking-[1.4px] mt-10 uppercase">Guests</span>
-            <div class="rounded-[15px] bg-[#F1F4F4] flex items-center justify-center gap-5 py-5 px-4 w-full mt-4">
+            <div class="rounded-[15px] bg-[#F1F4F4] xl:flex items-center justify-center gap-5 py-5 px-4 w-full mt-4">
               <span class="font-Primary text-[#3F484A]">Number of Guests</span>
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-3 xl:mt-0 mt-3">
                 <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">-</span>
                 <span class="font-Primary text-[#3F484A]">2</span>
                 <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">+</span>
@@ -141,24 +142,24 @@
             <!-- Amenities Filter -->
             <span class="font-Secondary font-bold text-[14px] text-[#181C1D] uppercase mt-10">Amenities</span>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] my-3">
-              <input type="checkbox" checked class="w-4 h-4">
+              <input type="checkbox" checked class="w-4 h-4 cursor-pointer">
               <img src="./assets/img/VillaListings/pool.svg" alt="Pool Icon" class="w-4 h-4">
-               Pool
+                Pool
             </label>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] mb-3">
-              <input type="checkbox" class="w-4 h-4 "> 
+              <input type="checkbox" class="w-4 h-4 cursor-pointer"> 
               <img src="./assets/img/VillaListings/wifi.svg" alt="WiFi Icon" class="w-4 h-4">
-               WiFi
+                WiFi
             </label>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A] mb-3">
-              <input type="checkbox" class="w-4 h-4 "> 
+              <input type="checkbox" class="w-4 h-4 cursor-pointer"> 
               <img src="./assets/img/VillaListings/bbq.svg" alt="BBQ Icon" class="w-4 h-4">
-               BBQ
+                BBQ
             </label>
             <label class="flex items-center gap-2 font-Primary text-[16px] text-[#3F484A]">
-              <input type="checkbox" checked class="w-4 h-4 "> 
+              <input type="checkbox" checked class="w-4 h-4 cursor-pointer"> 
               <img src="./assets/img/VillaListings/sea view.svg" alt="Sea View Icon" class="w-4 h-4">
-               Sea view
+                Sea view
             </label>
 
             <!-- Minimum Rating -->
@@ -169,9 +170,225 @@
               <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.8+</span>
             </div>
           </div>
+         
+          <!-- villa listings -->  
+          <div class="sm:w-3/4 w-full">
+            <!-- Heading -->
+            <div class="w-full flex flex-wrap gap-4 justify-between items-center mb-10 sm:px-8 px-2">
+              <span class="font-Primary font-medium text-[#3F484A]">Showing 12 exquisite villas</span>
+              <div class="flex justify-center items-center sm:gap-5 gap-2">
+                <span class="font-Primary font-semibold text-[14px] text-[#181C1D]">SORT BY:</span>
+                <span class="font-Primary font-semibold text-[16px] text-Primary">Recommended</span>
+                <img src="./assets/img/VillaListings/Vector.svg" alt="Vector Icon" class="w-4 h-4 inline-block cursor-pointer">
+              </div>
+              <span class="sm:hidden block">
+                <img src="./assets/img/VillaListings/filter-solid-full.svg" alt="Filter Icon" class="w-6 h-6 inline-block cursor-pointer">
+              </span>
+            </div>
+            <!-- villa cards -->
+            <div class="flex justify-center flex-wrap gap-8 ">
+              <!-- card 1-->
+              <div>
+                <div class="relative">
+                  <img src="./assets/img/VillaListings/Villa.png" alt="Villa 1" class="w-full h-auto rounded-t-[15px]">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                    <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
+                  </div>
+                  <div class="absolute left-4 bottom-4 px-3 py-1 bg-white/80 backdrop-blur-sm text-Primary 
+                        text-[12px] font-Primary font-bold tracking-[0.6px] rounded-[30px]">
+                    LUXURY COLLECTION
+                  </div>
+                </div>
+                <div class="bg-white rounded-b-[15px] px-6">
+                  <div class="flex justify-between items-center pt-6">
+                    <h2 class="font-Secondary font-bold text-[20px] text-[#181C1D]">The Azure Serenity</h2>
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/img/VillaListings/star.svg" alt="Star Icon" class="w-4 h-4 inline-block">
+                      <span class="font-Primary font-semibold text-[#181C1D] text-[14px]">4.9</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center pt-[7.5px]">
+                    <img src="./assets/img/VillaListings/location.svg" alt="Location Icon" class="inline-block">
+                    <span class="font-Primary text-[#3F484A] text-[14px] ml-1">Aegean Coast, Greece</span>
+                  </div>
+                  <div class="w-full border-t border-gray-300/50 mt-4 pt-4">
+                    <span class="font-Primary font-semibold text-[#3F484A] text-[12px] tracking-[1.2px]">PER NIGHT</span>
+                    <div class="flex justify-between pb-6">
+                      <span class="font-Primary font-semibold text-[24px] text-Primary">$1,250</span>
+                      <img src="./assets/img/VillaListings/arrow-right.svg" alt="Arrow Icon" class="cursor-pointer">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <!-- villa cards -->
-           <div></div>
+              <!-- card 2-->
+              <div>
+                <div class="relative">
+                  <img src="./assets/img/VillaListings/Villa (1).png" alt="Villa 2" class="w-full h-auto rounded-t-[15px]">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                    <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
+                  </div>
+                </div>
+                <div class="bg-white rounded-b-[15px] px-6">
+                  <div class="flex justify-between items-center pt-6">
+                    <h2 class="font-Secondary font-bold text-[20px] text-[#181C1D]">Cliffside Horizon</h2>
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/img/VillaListings/star.svg" alt="Star Icon" class="w-4 h-4 inline-block">
+                      <span class="font-Primary font-semibold text-[#181C1D] text-[14px]">4.8</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center pt-[7.5px]">
+                    <img src="./assets/img/VillaListings/location.svg" alt="Location Icon" class="inline-block">
+                    <span class="font-Primary text-[#3F484A] text-[14px] ml-1">Ionian Shores, Italy</span>
+                  </div>
+                  <div class="w-full border-t border-gray-300/50 mt-4 pt-4">
+                    <span class="font-Primary font-semibold text-[#3F484A] text-[12px] tracking-[1.2px]">PER NIGHT</span>
+                    <div class="flex justify-between pb-6">
+                      <span class="font-Primary font-semibold text-[24px] text-Primary">$2,100</span>
+                      <img src="./assets/img/VillaListings/arrow-right.svg" alt="Arrow Icon" class="cursor-pointer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3-->
+              <div>
+                <div class="relative">
+                  <img src="./assets/img/VillaListings/Villa (2).png" alt="Villa 3" class="w-full h-auto rounded-t-[15px]">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                    <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
+                  </div>
+                  <div class="absolute left-4 bottom-4 px-3 py-1 bg-white/80 backdrop-blur-sm text-Primary 
+                        text-[12px] font-Primary font-bold tracking-[0.6px] rounded-[30px]">
+                    AUTHENTIC STAY
+                  </div>
+                </div>
+                <div class="bg-white rounded-b-[15px] px-6">
+                  <div class="flex justify-between items-center pt-6">
+                    <h2 class="font-Secondary font-bold text-[20px] text-[#181C1D]">Olive Grove Manor</h2>
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/img/VillaListings/star.svg" alt="Star Icon" class="w-4 h-4 inline-block">
+                      <span class="font-Primary font-semibold text-[#181C1D] text-[14px]">4.7</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center pt-[7.5px]">
+                    <img src="./assets/img/VillaListings/location.svg" alt="Location Icon" class="inline-block">
+                    <span class="font-Primary text-[#3F484A] text-[14px] ml-1">Riviera Bay, Spain</span>
+                  </div>
+                  <div class="w-full border-t border-gray-300/50 mt-4 pt-4">
+                    <span class="font-Primary font-semibold text-[#3F484A] text-[12px] tracking-[1.2px]">PER NIGHT</span>
+                    <div class="flex justify-between pb-6">
+                      <span class="font-Primary font-semibold text-[24px] text-Primary">$890</span>
+                      <img src="./assets/img/VillaListings/arrow-right.svg" alt="Arrow Icon" class="cursor-pointer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4-->
+              <div>
+                <div class="relative">
+                  <img src="./assets/img/VillaListings/Villa (3).png" alt="Villa 4" class="w-full h-auto rounded-t-[15px]">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                    <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
+                  </div>
+                </div>
+                <div class="bg-white rounded-b-[15px] px-6">
+                  <div class="flex justify-between items-center pt-6">
+                    <h2 class="font-Secondary font-bold text-[20px] text-[#181C1D]">Obsidian Sanctuary</h2>
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/img/VillaListings/star.svg" alt="Star Icon" class="w-4 h-4 inline-block">
+                      <span class="font-Primary font-semibold text-[#181C1D] text-[14px]">4.9</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center pt-[7.5px]">
+                    <img src="./assets/img/VillaListings/location.svg" alt="Location Icon" class="inline-block">
+                    <span class="font-Primary text-[#3F484A] text-[14px] ml-1">Aegean Coast, Greece</span>
+                  </div>
+                  <div class="w-full border-t border-gray-300/50 mt-4 pt-4">
+                    <span class="font-Primary font-semibold text-[#3F484A] text-[12px] tracking-[1.2px]">PER NIGHT</span>
+                    <div class="flex justify-between pb-6">
+                      <span class="font-Primary font-semibold text-[24px] text-Primary">$4,500</span>
+                      <img src="./assets/img/VillaListings/arrow-right.svg" alt="Arrow Icon" class="cursor-pointer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 5-->
+              <div>
+                <div class="relative">
+                  <img src="./assets/img/VillaListings/Villa (4).png" alt="Villa 5" class="w-full h-auto rounded-t-[15px]">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                    <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
+                  </div>
+                </div>
+                <div class="bg-white rounded-b-[15px] px-6">
+                  <div class="flex justify-between items-center pt-6">
+                    <h2 class="font-Secondary font-bold text-[20px] text-[#181C1D]">Tropical Echo</h2>
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/img/VillaListings/star.svg" alt="Star Icon" class="w-4 h-4 inline-block">
+                      <span class="font-Primary font-semibold text-[#181C1D] text-[14px]">4.6</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center pt-[7.5px]">
+                    <img src="./assets/img/VillaListings/location.svg" alt="Location Icon" class="inline-block">
+                    <span class="font-Primary text-[#3F484A] text-[14px] ml-1">Riviera Bay, Spain</span>
+                  </div>
+                  <div class="w-full border-t border-gray-300/50 mt-4 pt-4">
+                    <span class="font-Primary font-semibold text-[#3F484A] text-[12px] tracking-[1.2px]">PER NIGHT</span>
+                    <div class="flex justify-between pb-6">
+                      <span class="font-Primary font-semibold text-[24px] text-Primary">$1,150</span>
+                      <img src="./assets/img/VillaListings/arrow-right.svg" alt="Arrow Icon" class="cursor-pointer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 6-->
+              <div>
+                <div class="relative">
+                  <img src="./assets/img/VillaListings/Villa (5).png" alt="Villa 6" class="w-full h-auto rounded-t-[15px]">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                    <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
+                  </div>
+                </div>
+                <div class="bg-white rounded-b-[15px] px-6">
+                  <div class="flex justify-between items-center pt-6">
+                    <h2 class="font-Secondary font-bold text-[20px] text-[#181C1D]">Siren's Whisper</h2>
+                    <div class="flex items-center gap-1">
+                      <img src="./assets/img/VillaListings/star.svg" alt="Star Icon" class="w-4 h-4 inline-block">
+                      <span class="font-Primary font-semibold text-[#181C1D] text-[14px]">4.9</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center pt-[7.5px]">
+                    <img src="./assets/img/VillaListings/location.svg" alt="Location Icon" class="inline-block">
+                    <span class="font-Primary text-[#3F484A] text-[14px] ml-1">Ionian Shores, Italy</span>
+                  </div>
+                  <div class="w-full border-t border-gray-300/50 mt-4 pt-4">
+                    <span class="font-Primary font-semibold text-[#3F484A] text-[12px] tracking-[1.2px]">PER NIGHT</span>
+                    <div class="flex justify-between pb-6">
+                      <span class="font-Primary font-semibold text-[24px] text-Primary">$1,800</span>
+                      <img src="./assets/img/VillaListings/arrow-right.svg" alt="Arrow Icon" class="cursor-pointer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <div class="flex w-full justify-center items-center mt-6 pt-6 gap-2"> 
+                <span class="flex justify-center items-center py-4.5 px-5 rounded-full border border-gray-400 cursor-pointer">
+                  <img src="./assets/img/VillaListings/arrow-left.svg" alt="Arrow Left Icon">
+                </span>
+                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">1</span>
+                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">2</span>
+                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">3</span>
+                <span class="flex justify-center items-center py-4.5 px-5 rounded-full border border-gray-400 cursor-pointer">
+                  <img src="./assets/img/VillaListings/arrow-right2.svg" alt="Arrow Left Icon">
+                </span>
+              </div>
+            </div>
+          </div>
         </div>  
     </section>
 
