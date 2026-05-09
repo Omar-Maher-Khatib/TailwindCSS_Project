@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
-    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link href="./assets/css/output.css" rel="stylesheet"/>
 </head>
 <body class="bg-[#F7FAFA]">
     <!-- Header -->
@@ -90,13 +90,13 @@
     <section>
       <div class="container mx-auto">
         <!-- Title -->
-        <div class="mt-8 px-8">
+        <div class="mt-8 px-8 relative">
           <span class="font-Primary font-semibold text-[11px] text-[#715B30] tracking-[0.88px]">
             BOUTIQUE LUXURY • MALDIVES
           </span>
-          <h2 class="font-extrabold font-Secondary text-[#00565E] lg:text-[60px] text-[40px] mt-3">Azure Horizon Overwater Villa</h2>
-          <div class="flex justify-start items-center mt-4">
-            <div class="flex justify-center items-center  gap-1">
+          <h2 class="font-extrabold font-Secondary text-[#00565E] lg:text-[60px] md:text-[40px] text-[30px] mt-3">Azure Horizon Overwater Villa</h2>
+          <div class="flex justify-start items-center mt-4 flex-wrap gap-1">
+            <div class="flex justify-center items-center gap-1">
               <img src="./assets/img/VillaDetails/star.svg" alt="Rating" />
               <span class="font-Primary font-semibold text-[#715B30]">4.98</span>
               <span class="font-Primary text-[#3F484A]">(128 Reviews)</span>
@@ -107,11 +107,19 @@
               <span class="font-Primary text-[#3F484A]">South Atoll, Baa Atoll</span>
             </div>
           </div>
+          <div class="sm:block hidden">
+            <div class="absolute bottom-0 right-22 py-3 px-3 bg-[#EBEEEE] rounded-full flex justify-center items-center hover:bg-Primary transition duration-300 cursor-pointer">
+              <img src="./assets/img/VillaDetails/share.svg" alt="share Icon"/>
+            </div>
+            <div class="absolute bottom-0 right-8 py-3 px-3 bg-[#EBEEEE] rounded-full flex justify-center items-center hover:bg-Primary transition duration-300 cursor-pointer">
+              <img src="./assets/img/VillaDetails/heart.svg" alt="heart Icon"/>
+            </div>
+          </div>
         </div>
 
-        <div class="mt-12 px-8">
+        <div class="flex lg:flex-row flex-col xl:gap-12 gap-6 mt-12 sm:px-8 px-4">
           <!-- Left -->
-          <div class="w-2/3 flex-col justify-center items-center">
+          <div class="lg:w-2/3 w-full flex-col justify-center items-center">
             <!-- Images -->
             <div class="relative mb-6">
               <img
@@ -119,7 +127,8 @@
                 alt="Main Villa Image"
                 class="w-full object-cover rounded-[20px] shadow-xl "
               />
-              <div class="absolute right-6 bottom-6 flex justify-center items-center bg-white lg:py-3 lg:px-6 py-2 px-3 rounded-[30px]">
+              <div class="absolute sm:right-6 sm:bottom-6 right-3 bottom-3 flex justify-center 
+                items-center bg-white lg:py-3 lg:px-6 py-2 px-3 rounded-[30px] cursor-pointer hover:bg-gray-300 transition duration-300">
                 <img src="./assets/img/VillaDetails/Images.svg" alt="Images Icon"/>
                 <span class="ml-2 font-Primary font-semibold text-[#181C1D]">View All Photos</span>
               </div>
@@ -128,26 +137,26 @@
               <img
                 src="./assets/img/VillaDetails/Image2.png"
                 alt="Villa Image 2"
-                class="object-cover rounded-[20px] 2xl:w-53.5 xl:w-48 lg:w-36 md:w-26 sm:w-20 "
+                class="object-cover rounded-[20px] 2xl:w-53.5 xl:w-48 md:w-36 w-30"
               />
               <img
                 src="./assets/img/VillaDetails/Image3.png"
                 alt="Villa Image 3"
-                class="object-cover rounded-[20px] 2xl:w-53.5 xl:w-48 lg:w-36 md:w-26 sm:w-20"
+                class="object-cover rounded-[20px] 2xl:w-53.5 xl:w-48 md:w-36 w-30"
               />
               <img
                 src="./assets/img/VillaDetails/Image4.png"
                 alt="Villa Image 4"
-                class="object-cover rounded-[20px] 2xl:w-53.5 xl:w-48 lg:w-36 md:w-26 sm:w-20 "
+                class="object-cover rounded-[20px] 2xl:w-53.5 xl:w-48 md:w-36 w-30"
               />
-              <div class="relative 2xl:w-53.5 xl:w-48 lg:w-36 md:w-26 sm:w-20">
+              <div class="relative 2xl:w-53.5 xl:w-48 md:w-36 w-30">
                 <img
                   src="./assets/img/VillaDetails/Image5.png"
                   alt="Villa Image 5"
                   class="object-cover rounded-[20px]"
                 />
                 <div class="absolute left-0 top-0 bg-Primary/50 bg-cover font-Primary font-semibold
-                 text-white flex justify-center items-center rounded-[20px] w-full h-full">
+                 text-white flex justify-center items-center rounded-[20px] w-full h-full hover:bg-Primary/90 transition duration-300 cursor-pointer">
                  +12
                 </div>
               </div>
@@ -155,16 +164,16 @@
 
             <!-- Experience Serenity -->
             <div>
-              <h2 class="font-Secondary font-bold text-[30px] text-[#181C1D]">Experience Serenity</h2>
-              <p class="mt-6 mb-12 font-Primary text-[18px] text-[#3F484A]">Suspended above the turquoise lagoon, the Azure Horizon Overwater Villa offers an <br>
-                unparalleled sanctuary of space and light. Floor-to-ceiling glass walls frame the Indian <br>
-                Ocean, blurring the lines between the contemporary interior and the vast horizon. Relax <br>
-                on your expansive private deck, take a dip in your infinity pool, or descend directly into <br>
+              <h2 class="font-Secondary font-bold sm:text-[30px] text-[24px] text-[#181C1D]">Experience Serenity</h2>
+              <p class=" mt-6 mb-12 font-Primary text-[18px] text-[#3F484A]">Suspended above the turquoise lagoon, the Azure Horizon Overwater Villa offers an 
+                unparalleled sanctuary of space and light. Floor-to-ceiling glass walls frame the Indian 
+                Ocean, blurring the lines between the contemporary interior and the vast horizon. Relax 
+                on your expansive private deck, take a dip in your infinity pool, or descend directly into 
                 the vibrant coral gardens below.</p>
             </div>
 
             <!-- Curated Amenities -->
-            <div class="mx-8 mb-12 h-[0.5px] w-2/3 bg-gray-300/50"></div>
+            <div class="mx-8 mb-12 h-[0.5px] w-full bg-gray-300/50"></div>
 
             <div>
               <h2 class="font-Secondary font-bold text-[24px] text-[#181C1D] mb-8">Curated Amenities</h2>
@@ -221,7 +230,69 @@
           </div>
 
           <!-- Right -->
-          <div></div>
+          <div class="flex flex-col gap-8 lg:w-1/3 w-full">
+            <div class="bg-white sm:p-8 p-4 flex justify-start items-center flex-col rounded-[20px] shadow-xl w-full h-fit">
+              <div class="w-full flex justify-between items-center">
+                <div>
+                  <span class="font-Primary font-semibold text-[30px] text-Primary">$1,250</span>
+                  <span class="font-Primary font-medium text-[#3F484A]">/ night</span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <img src="./assets/img/VillaDetails/star3.svg" alt="star Icon"/>
+                  <span class="font-Primary font-semibold text-[14px] text-[#3F484A]">4.98</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-8 border border-gray-300/60 rounded-[20px] w-full">
+                <div class="w-1/2 flex flex-col justify-start items-start p-4">
+                  <span class="font-Primary font-semibold text-[10px] text-[#3F484A] tracking-[0.5px]">CHECK-IN</span>
+                  <span class="font-Primary font-medium text-[#181C1D]">Oct 24, 2024</span>
+                </div>
+                <div class="w-[0.5px] h-full bg-gray-300/60"></div>
+                <div class="w-1/2 flex flex-col justify-start items-start p-4">
+                  <span class="font-Primary font-semibold text-[10px] text-[#3F484A] tracking-[0.5px]">CHECK-OUT</span>
+                  <span class="font-Primary font-medium text-[#181C1D]">Oct 31, 2024</span>
+                </div>
+              </div>
+              <div class="flex-col justify-between items-center mt-8 border border-gray-300/60 rounded-[20px] w-full p-4">
+                <span class="font-Primary font-semibold text-[10px] text-[#3F484A] tracking-[0.5px]">GUESTS</span>
+                <div class="w-full flex justify-between items-center">
+                  <span class="font-Primary font-medium text-[#181C1D]">2 Adults, 1 Child</span>
+                  <img src="./assets/img/VillaDetails/Vector.svg" alt="vector Icon"/>
+                </div>
+              </div>
+              <button class="font-Primary font-semibold text-[18px] text-white bg-[#00565E] 
+                    py-4 w-full mt-8 rounded-[30px] cursor-pointer hover:bg-Primary transition duration-300">Reserve Villa</button>
+              <span class="my-4 font-Primary text-[14px] text-[#3F484A]">
+                You won't be charged yet
+              </span>
+              <div class="pt-10 border-t border-gray-300/50 w-full space-y-4">
+                <div class="flex justify-between items-center">
+                  <span class="font-Primary text-[#3F484A]">$1,250 x 7 nights</span>
+                  <span class="font-Primary text-[#3F484A]">$8,750</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="font-Primary text-[#3F484A]">Resort fee (10%)</span>
+                  <span class="font-Primary text-[#3F484A]">$875</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="font-Primary text-[#3F484A]">Service charge</span>
+                  <span class="font-Primary text-[#3F484A]">$120</span>
+                </div>     
+                <div class="flex justify-between items-center">
+                  <span class="font-Primary font-semibold text-[18px] text-[#00565E]">Total</span>
+                  <span class="font-Primary font-semibold text-[18px] text-[#00565E]">$9,745</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#FDDFA8]/30 flex justify-start p-8 rounded-[20px] w-full h-fit"> 
+              <img src="./assets/img/VillaDetails/medal.svg" alt="medal Icon" class="w-4"/>
+              <div class="flex flex-col justify-start ml-4">
+                <span class="font-Primary font-semibold text-[16px] text-[#261900]">Member Exclusive</span>
+                <span class="font-Primary text-[12px] text-[#261900]">Earn 4,500 Escape Points on this booking</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
