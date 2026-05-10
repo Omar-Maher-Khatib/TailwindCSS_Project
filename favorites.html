@@ -85,7 +85,7 @@
     </header>
 
     <!-- Saved Sanctuaries Section-->
-    <section class="mb-20">
+    <section class="mb-40">
       <div class="container mx-auto sm:px-8 px-5 pt-9.5">
         <!-- Title -->
         <div class="flex flex-col space-y-4">
@@ -215,7 +215,7 @@
     </section>
 
     <!-- Inspired by Your Taste Section-->
-    <section class="mt-20 mb-120">
+    <section class="mt-40 mb-120">
       <div class="container mx-auto sm:px-8 px-5">
 
         <!-- Title -->
@@ -223,22 +223,36 @@
           <span class="font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">RECOMMENDED FOR YOU</span>
           <div class="flex md:flex-row flex-col justify-between w-full">
             <h2 class="font-Secondary font-bold text-[#181C1D] md:text-[36px] text-[26px]">Inspired by Your Taste</h2>
-            <span class="font-Primary font-semibold text-Primary underline underline-offset-8">View more inspiration</span>
+            <span class="font-Primary font-semibold text-Primary underline underline-offset-8 cursor-pointer">View more inspiration</span>
           </div>
         </div>
 
         <!-- Inspiration Grid -->
          <div class="mt-12 w-full flex lg:flex-row flex-col justify-center gap-6">
           <!-- Left Item -->
-          <div>
+          <div class="relative overflow-hidden rounded-[15px]">
             <img src="./assets/img/favorites/image4.png" alt="Inspiration 1" class="rounded-[15px] w-full h-full">
+            <!-- Gradient Overlay (Lower Z-index) -->
+            <div class="absolute inset-0 z-1 bg-linear-to-r from-black/60 to-transparent"></div>
+            <div class="absolute z-10 left-10 bottom-10 flex flex-col space-y-2">
+              <span class="font-Primary text-[14px] text-white/80 tracking-[1.4px]">HIDDEN GEM</span>
+              <h3 class="font-Primary font-semibold text-[24px] text-white">Midnight Lagoon Retreat</h3>
+            </div>
           </div>
 
           <!-- Right Items -->
           <div class="flex flex-col gap-6">
             <!--Top Item -->
-            <div>
-              <img src="./assets/img/favorites/image5.png" alt="Inspiration 2" class="rounded-[15px] w-full h-full">
+            <div class="relative overflow-hidden rounded-[15px]">
+              <img src="./assets/img/favorites/image5.png" alt="Inspiration 2" class="w-full h-full object-cover">
+              
+              <!-- Gradient Overlay (Lower Z-index) -->
+              <div class="absolute inset-0 z-1 bg-linear-to-r from-black/60 to-transparent"></div>
+              
+              <!-- Text Content (Higher Z-index) -->
+              <h3 class="absolute z-10 left-8 bottom-8 font-Primary font-semibold text-[20px] text-white">
+                Private Island Dining
+              </h3>
             </div>
 
             <!--Bottom Items -->
