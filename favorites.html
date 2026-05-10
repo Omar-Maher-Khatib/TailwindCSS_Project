@@ -12,7 +12,7 @@
     />
     <link href="./assets/css/output.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="bg-[#F7FAFA]">
     <!-- Header -->
     <header class="bg-white w-full shadow-sm">
       <div
@@ -38,9 +38,7 @@
           >
             <a href="./index.html">Home</a>
           </li>
-          <li 
-            class="text-[16px] text-Primary font-Secondary underline decoration-2 
-            underline-offset-7 font-semibold tracking-tighter">
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
             <a href="./villas.html">Villas</a>
           </li>
           <li class="text-[16px] text-[#5F6F73] font-Secondary">
@@ -65,9 +63,9 @@
                 ><img src="./assets/img/header/search.svg" alt="Search"
               /></a>
             </li>
-            <li>
-              <a href="#"
-                ><img src="./assets/img/header/heart.svg" alt="Favorites"
+            <li class="underline decoration-2 underline-offset-7">
+              <a href="./favorites.html"
+                ><img src="./assets/img/favorites/heart1.svg" alt="Favorites"
               /></a>
             </li>
             <li>
@@ -85,6 +83,135 @@
         </div>
       </div>
     </header>
+
+    <section>
+      <div class="container mx-auto px-8 pt-9.5">
+        <!-- Title -->
+        <div class="flex flex-col space-y-4">
+          <span class="font-Primary font-semibold text-Primary text-[11px] tracking-[0.88px]">PERSONAL CURATION</span>
+          <h1 class="font-Secondary font-extrabold text-[#181C1D] sm:text-[56px] text-[40px]">Saved Sanctuaries</h1>
+          <p class="font-Primary text-[#3F484A]">A private collection of your most coveted escapes. Ready for the moment <br>
+              you choose to drift away.
+          </p>
+        </div>
+
+        <!-- Favorites Grid -->
+        <div class="flex xl:justify-between lg:flex-nowrap gap-8 flex-wrap justify-center items-end mt-16 mb-40 ">
+         <!-- Favorite Item 1 -->
+          <div>
+            <div class="relative">
+              <img src="./assets/img/favorites/image1.png" alt="Favorite 1" class="rounded-t-[15px] w-full">
+              <div class="absolute right-6 top-6 rounded-full bg-white/80 p-2 cursor-pointer">
+                <img src="./assets/img/favorites/heart2.svg" alt="Favorite" class="w-5 h-5">
+              </div>
+              <span class="absolute left-6 bottom-6 bg-white/90 rounded-[20px] py-1 px-3 
+                    font-Primary font-semibold text-[11px] text-[#181C1D] tracking-[0.55px]">
+                AVAILABLE SEP
+              </span>
+            </div>
+            <div class="bg-white rounded-b-[15px] w-full flex flex-col justify-center items-center xl:p-8 p-5 xl:pb-20">
+              <div class="flex justify-between items-start w-full">
+                <h3 class="font-Secondary font-bold text-[24px] text-[#181C1D]">Azure Infinity Suite</h3>
+                <div class="flex flex-col">
+                  <span class="font-Primary font-semibold text-[20px] text-Primary">$1,850</span>
+                  <span class="font-Primary text-[10px] text-[#3F484A] tracking-[1px]">PER NIGHT</span>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <img src="./assets/img/favorites/location.svg" alt="Location" class="mr-1">
+                <span class="font-Primary text-[14px] text-[#3F484A]">North Atoll, Maldives</span>
+              </div>
+              <div class="w-full h-[0.5px] bg-gray-200/30 mt-4"></div>
+              <div class="w-full flex justify-start items-center space-x-6 pt-4">
+                <div class="flex items-center space-x-2">
+                  <img src="./assets/img/favorites/bed.svg" alt="Beds">
+                  <span class="font-Primary text-[14px] text-[#3F484A]">3 Beds</span>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                  <img src="./assets/img/favorites/swim.svg" alt="Swimming Pool">
+                  <span class="font-Primary text-[14px] text-[#3F484A]">Private Pool</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Favorite Item 2 -->
+          <div>
+            <div class="relative">
+              <img src="./assets/img/favorites/image2.png" alt="Favorite 2" class="rounded-t-[15px] w-full">
+              <div class="absolute right-6 top-6 rounded-full bg-white/80 p-2 cursor-pointer">
+                <img src="./assets/img/favorites/heart2.svg" alt="Favorite" class="w-5 h-5">
+              </div>
+            </div>
+            <div class="bg-white rounded-b-[15px] w-full flex flex-col justify-center items-center xl:p-8 p-5">
+              <div class="flex justify-between items-start w-full">
+                <h3 class="font-Secondary font-bold text-[24px] text-[#181C1D]">Celestial Cliff House</h3>
+                <div class="flex flex-col">
+                  <span class="font-Primary font-semibold text-[20px] text-Primary">$1,200</span>
+                  <span class="font-Primary text-[10px] text-[#3F484A] tracking-[1px]">PER NIGHT</span>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <img src="./assets/img/favorites/location.svg" alt="Location" class="mr-1">
+                <span class="font-Primary text-[14px] text-[#3F484A]">Uluwatu, Bali</span>
+              </div>
+              <div class="w-full h-[0.5px] bg-gray-200/30 mt-4"></div>
+              <div class="w-full flex justify-start items-center space-x-6 pt-4">
+                <div class="flex items-center space-x-2">
+                  <img src="./assets/img/favorites/bed.svg" alt="Beds">
+                  <span class="font-Primary text-[14px] text-[#3F484A]">2 Beds</span>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                  <img src="./assets/img/favorites/flower.svg" alt="Wellness Hub">
+                  <span class="font-Primary text-[14px] text-[#3F484A]">Wellness Hub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Favorite Item 3 -->
+          <div>
+            <div class="relative">
+              <img src="./assets/img/favorites/image3.png" alt="Favorite 3" class="rounded-t-[15px] w-full">
+              <div class="absolute right-6 top-6 rounded-full bg-white/80 p-2 cursor-pointer">
+                <img src="./assets/img/favorites/heart2.svg" alt="Favorite" class="w-5 h-5">
+              </div>
+              <span class="absolute left-6 bottom-6 bg-[#FDDFA8]/90 rounded-[20px] py-1 px-3 
+                    font-Primary font-semibold text-[11px] text-[#776135] tracking-[0.55px]">
+                GUEST FAVORITE
+              </span>
+            </div>
+            <div class="bg-white rounded-b-[15px] w-full flex flex-col justify-center items-center xl:p-8 p-5 xl:pb-20">
+              <div class="flex justify-between items-start w-full">
+                <h3 class="font-Secondary font-bold text-[24px] text-[#181C1D]">The Driftwood Estate</h3>
+                <div class="flex flex-col">
+                  <span class="font-Primary font-semibold text-[20px] text-Primary">$2,400</span>
+                  <span class="font-Primary text-[10px] text-[#3F484A] tracking-[1px]">PER NIGHT</span>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <img src="./assets/img/favorites/location.svg" alt="Location" class="mr-1">
+                <span class="font-Primary text-[14px] text-[#3F484A]">Exuma, Bahamas</span>
+              </div>
+              <div class="w-full h-[0.5px] bg-gray-200/30 mt-4"></div>
+              <div class="w-full flex justify-start items-center space-x-6 pt-4">
+                <div class="flex items-center space-x-2">
+                  <img src="./assets/img/favorites/bed.svg" alt="Beds">
+                  <span class="font-Primary text-[14px] text-[#3F484A]">5 Beds</span>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                  <img src="./assets/img/favorites/boat.svg" alt="Boat">
+                  <span class="font-Primary text-[14px] text-[#3F484A]">Private Dock</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
     
 </body>
 </html>
