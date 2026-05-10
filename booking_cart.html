@@ -12,11 +12,11 @@
     />
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
-<body>
+<body class="bg-[#F7FAFA]">
     <!-- Header -->
-    <header class="bg-white/70 fixed w-full z-10 backdrop-blur-sm">
+    <header class="bg-white w-full shadow-sm">
       <div
-        class="container mx-auto flex items-center justify-between py-6 px-8"
+        class="container mx-auto flex items-center justify-between py-6 sm:px-8 px-5"
       >
         <div class="lg:hidden cursor-pointer flex">
           <img
@@ -34,8 +34,7 @@
         <!-- Middle Side -->
         <ul class="space-x-4 hidden lg:flex xl:space-x-8">
           <li
-            class="text-[16px] text-Primary font-Secondary underline decoration-2 
-            underline-offset-7 font-semibold tracking-tighter"
+            class="text-[16px] text-[#5F6F73] font-Secondary"
           >
             <a href="./index.html">Home</a>
           </li>
@@ -64,7 +63,7 @@
                 ><img src="./assets/img/header/search.svg" alt="Search"
               /></a>
             </li>
-            <li>
+            <li class="underline decoration-2 underline-offset-7">
               <a href="./favorites.html"
                 ><img src="./assets/img/header/heart.svg" alt="Favorites"
               /></a>
@@ -85,7 +84,43 @@
       </div>
     </header>
 
-    <section></section>
+    <section>
+        <div class="container mx-auto px-8 mt-8">
+            <!-- Title -->
+            <div class="flex flex-col space-y-4">
+                <span class="font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">REVIEW YOUR STAY</span>
+                <h2 class="font-Secondary font-extrabold text-[#181C1D] text-[56px]">Your Reservation</h2>
+            </div>
+
+            <!-- Reservation Details -->
+             <div class="flex justify-between mt-12 gap-8">
+                <!-- left -->
+                 <div class="flex flex-col w-2/3">
+                    <div class="bg-white p-8 rounded-[20px] shadow-sm flex items-center gap-8">
+                        <img src="./assets/img/cart/image.png" alt="Villa" class=" rounded-[20px] object-cover">
+                        <div class="flex flex-col w-full">
+                            <div class="flex justify-between w-full">
+                                <h2 class="font-Secondary font-semibold text-[24px] text-[#181C1D]">The Azure Sanctuary</h2>
+                                <img src="./assets/img/cart/trash.svg" alt="trash" class="cursor-pointer">
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <img src="./assets/img/cart/location.svg" alt="location">
+                                <span class="font-Primary text-[#3F484A]">North Atoll, Maldives</span>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div></div>
+                 </div>
+
+                <!-- right -->
+                 <div></div>
+
+             </div>
+
+        </div>
+    </section>
     
 </body>
 </html>
