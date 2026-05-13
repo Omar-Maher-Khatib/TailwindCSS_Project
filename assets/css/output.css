@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-teal-700: oklch(51.1% 0.096 186.391);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
@@ -40,7 +41,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
-    --font-weight-black: 900;
     --tracking-tighter: -0.05em;
     --tracking-tight: -0.025em;
     --radius-lg: 0.5rem;
@@ -51,6 +51,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-Primary: #1E6F78;
+    --color-Tertiary: #FF8C42;
     --font-Primary: 'Inter', sans-serif;
     --font-Secondary: 'Plus Jakarta Sans', sans-serif;
   }
@@ -432,6 +433,9 @@
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
+  .ml-9 {
+    margin-left: calc(var(--spacing) * 9);
+  }
   .block {
     display: block;
   }
@@ -464,9 +468,6 @@
   }
   .h-200 {
     height: calc(var(--spacing) * 200);
-  }
-  .h-\[0\.5\] {
-    height: 0.5;
   }
   .h-\[0\.5px\] {
     height: 0.5px;
@@ -536,12 +537,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-md {
-    width: var(--container-md);
-  }
-  .w-sm {
-    width: var(--container-sm);
   }
   .flex-1 {
     flex: 1;
@@ -681,6 +676,9 @@
   .rounded-\[30px\] {
     border-radius: 30px;
   }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -714,6 +712,14 @@
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
   }
   .border-Primary {
     border-color: var(--color-Primary);
@@ -757,30 +763,6 @@
       border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
-  .border-b-gray-200 {
-    border-bottom-color: var(--color-gray-200);
-  }
-  .border-b-gray-200\/50 {
-    border-bottom-color: color-mix(in srgb, oklch(92.8% 0.006 264.531) 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-bottom-color: color-mix(in oklab, var(--color-gray-200) 50%, transparent);
-    }
-  }
-  .border-b-gray-300 {
-    border-bottom-color: var(--color-gray-300);
-  }
-  .border-b-gray-300\/50 {
-    border-bottom-color: color-mix(in srgb, oklch(87.2% 0.01 258.338) 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-bottom-color: color-mix(in oklab, var(--color-gray-300) 50%, transparent);
-    }
-  }
-  .border-b-gray-300\/90 {
-    border-bottom-color: color-mix(in srgb, oklch(87.2% 0.01 258.338) 90%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-bottom-color: color-mix(in oklab, var(--color-gray-300) 90%, transparent);
-    }
-  }
   .bg-Primary {
     background-color: var(--color-Primary);
   }
@@ -790,14 +772,17 @@
       background-color: color-mix(in oklab, var(--color-Primary) 50%, transparent);
     }
   }
+  .bg-Tertiary {
+    background-color: var(--color-Tertiary);
+  }
   .bg-\[\#00565E\] {
     background-color: #00565E;
   }
+  .bg-\[\#00565E\]\/5 {
+    background-color: color-mix(in oklab, #00565E 5%, transparent);
+  }
   .bg-\[\#BEC8CA\]\/10 {
     background-color: color-mix(in oklab, #BEC8CA 10%, transparent);
-  }
-  .bg-\[\#BEC8CA\]\/30 {
-    background-color: color-mix(in oklab, #BEC8CA 30%, transparent);
   }
   .bg-\[\#EBEEEE\] {
     background-color: #EBEEEE;
@@ -808,20 +793,20 @@
   .bg-\[\#F7FAFA\] {
     background-color: #F7FAFA;
   }
-  .bg-\[\#FDDFA8\] {
-    background-color: #FDDFA8;
-  }
   .bg-\[\#FDDFA8\]\/30 {
     background-color: color-mix(in oklab, #FDDFA8 30%, transparent);
   }
   .bg-\[\#FDDFA8\]\/90 {
     background-color: color-mix(in oklab, #FDDFA8 90%, transparent);
   }
+  .bg-\[\#FF8C42\] {
+    background-color: #FF8C42;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
   .bg-\[\#f7fafa\] {
     background-color: #f7fafa;
-  }
-  .bg-\[FDDFA8\] {
-    background-color: FDDFA8;
   }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
@@ -1094,9 +1079,6 @@
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
-  .pb-4 {
-    padding-bottom: calc(var(--spacing) * 4);
-  }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
@@ -1346,9 +1328,6 @@
   .text-\[\#FDDFA8\] {
     color: #FDDFA8;
   }
-  .text-\[\#\] {
-    color: #;
-  }
   .text-gray-300 {
     color: var(--color-gray-300);
   }
@@ -1402,10 +1381,6 @@
   }
   .opacity-90 {
     opacity: 90%;
-  }
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1506,6 +1481,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-300);
+      }
+    }
+  }
+  .hover\:bg-orange-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-orange-500);
       }
     }
   }
