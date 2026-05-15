@@ -13,8 +13,8 @@
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
 <body class="bg-[#f7fafa]">
-    <!-- header -->
-    <header class="bg-white w-full shadow-sm">
+    <!-- Header -->
+    <header class="bg-white w-full shadow-md">
       <div
         class="container mx-auto flex items-center justify-between py-6 px-8"
       >
@@ -33,27 +33,17 @@
 
         <!-- Middle Side -->
         <ul class="space-x-4 hidden lg:flex xl:space-x-8">
-          <li
-            class="text-[16px] text-[#5F6F73] font-Secondary"
-          >
-            <a href="./index.html">Home</a>
-          </li>
-          <li 
-            class="text-[16px] text-Primary font-Secondary underline decoration-2 
-            underline-offset-7 font-semibold tracking-tighter">
+          <li class="text-[16px] text-[#5F6F73] font-Secondary">
             <a href="./villas.html">Villas</a>
           </li>
           <li class="text-[16px] text-[#5F6F73] font-Secondary">
-            <a href="./pools.html">Pools</a>
+            <a href="#">Experiences</a>
           </li>
           <li class="text-[16px] text-[#5F6F73] font-Secondary">
-            <a href="./experiences.html">Experiences</a>
+            <a href="#">Dining</a>
           </li>
           <li class="text-[16px] text-[#5F6F73] font-Secondary">
-            <a href="./drinks.html">Drinks</a>
-          </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
-            <a href="./contact.html">Contact</a>
+            <a href="#">Gallery</a>
           </li>
         </ul>
 
@@ -61,27 +51,30 @@
         <div class="items-center space-x-6  hidden lg:flex">
           <ul class="space-x-4 flex">
             <li>
-              <a href="#"
-                ><img src="./assets/img/header/search.svg" alt="Search"
-              /></a>
-            </li>
-            <li>
               <a href="./favorites.html"
                 ><img src="./assets/img/header/heart.svg" alt="Favorites"
               /></a>
             </li>
             <li>
-              <a href="./login.html"
-                ><img src="./assets/img/header/person.svg" alt="Login"
+              <a href="./booking_cart.html"
+                ><img src="./assets/img/Login/cart.svg" alt="cart"
               /></a>
             </li>
           </ul>
-          <button
-            class="text-white bg-Primary py-3 px-5 xl:px-8 text-[16px] font-Primary font-semibold 
-            rounded-[30px] cursor-pointer hover:bg-teal-700"
-            >
-            Book Now
-          </button>
+          <div class="flex gap-4">
+            <a href="./booking_cart.html"
+              class="text-Primary border border-Primary/30 py-3 px-5 xl:px-8 text-[16px] font-Primary font-semibold 
+              rounded-[30px] cursor-pointer hover:bg-Primary hover:text-white transition duration-300"
+              >
+              Login
+            </a>
+            <a href="./booking_cart.html"
+              class="text-white bg-Primary py-3 px-5 xl:px-8 text-[16px] font-Primary font-semibold 
+              rounded-[30px] cursor-pointer hover:bg-teal-700 transition duration-300"
+              >
+              Book Now
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -133,9 +126,11 @@
             <div class="rounded-[15px] bg-[#F1F4F4] xl:flex items-center justify-center gap-5 py-5 px-4 w-full mt-4">
               <span class="font-Primary text-[#3F484A]">Number of Guests</span>
               <div class="flex items-center gap-3 xl:mt-0 mt-3">
-                <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">-</span>
+                <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 
+                cursor-pointer hover:bg-Primary hover:text-white transition duration-300">-</span>
                 <span class="font-Primary text-[#3F484A]">2</span>
-                <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">+</span>
+                <span class="flex justify-center items-center w-8 py-1 rounded-full border border-gray-400 
+                cursor-pointer hover:bg-Primary hover:text-white transition duration-300">+</span>
               </div>
             </div>
 
@@ -165,9 +160,12 @@
             <!-- Minimum Rating -->
             <span class="font-Secondary font-bold text-[14px] text-[#181C1D] uppercase mt-10">Minimum Rating</span>
             <div class="flex items-center justify-center gap-2 mt-4">
-              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.0+</span>
-              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.5+</span>
-              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D] hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer">4.8+</span>
+              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D]
+               hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer transition duration-300">4.0+</span>
+              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D]
+               hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer transition duration-300">4.5+</span>
+              <span class="rounded-3xl border border-gray-400 py-1.5 px-3 font-Primary font-semibold text-[#181C1D]
+               hover:bg-Primary/10 hover:text-Primary hover:font-bold hover:border-Primary cursor-pointer transition duration-300">4.8+</span>
             </div>
           </div>
          
@@ -191,7 +189,8 @@
               <a href="./villa_details.html" class="cursor-pointer">
                 <div class="relative">
                   <img src="./assets/img/VillaListings/Villa.png" alt="Villa 1" class="w-full h-auto rounded-t-[15px]">
-                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full
+                   bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary transition duration-300">
                     <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
                   </div>
                   <div class="absolute left-4 bottom-4 px-3 py-1 bg-white/80 backdrop-blur-sm text-Primary 
@@ -225,7 +224,8 @@
               <a href="./villa_details.html" class="cursor-pointer">
                 <div class="relative">
                   <img src="./assets/img/VillaListings/Villa (1).png" alt="Villa 2" class="w-full h-auto rounded-t-[15px]">
-                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full
+                   bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary transition duration-300">
                     <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
                   </div>
                 </div>
@@ -255,7 +255,7 @@
               <a href="./villa_details.html" class="cursor-pointer">
                 <div class="relative">
                   <img src="./assets/img/VillaListings/Villa (2).png" alt="Villa 3" class="w-full h-auto rounded-t-[15px]">
-                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary transition duration-300">
                     <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
                   </div>
                   <div class="absolute left-4 bottom-4 px-3 py-1 bg-white/80 backdrop-blur-sm text-Primary 
@@ -289,7 +289,7 @@
               <a href="./villa_details.html" class="cursor-pointer">
                 <div class="relative">
                   <img src="./assets/img/VillaListings/Villa (3).png" alt="Villa 4" class="w-full h-auto rounded-t-[15px]">
-                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary transition duration-300">
                     <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
                   </div>
                 </div>
@@ -319,7 +319,7 @@
               <a href="./villa_details.html" class="cursor-pointer">
                 <div class="relative">
                   <img src="./assets/img/VillaListings/Villa (4).png" alt="Villa 5" class="w-full h-auto rounded-t-[15px]">
-                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary transition duration-300">
                     <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
                   </div>
                 </div>
@@ -349,7 +349,7 @@
               <a href="./villa_details.html" class="cursor-pointer">
                 <div class="relative">
                   <img src="./assets/img/VillaListings/Villa (5).png" alt="Villa 6" class="w-full h-auto rounded-t-[15px]">
-                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary">
+                  <div class="absolute right-4 top-4 flex justify-center items-center w-10 h-10 rounded-full bg-white/30 backdrop-blur-sm cursor-pointer hover:bg-Primary transition duration-300">
                     <img src="./assets/img/VillaListings/heart.svg" alt="Heart Icon">
                   </div>
                 </div>
@@ -377,13 +377,13 @@
 
               <!-- Pagination -->
               <div class="flex w-full justify-center items-center mt-6 pt-6 gap-2"> 
-                <span class="flex justify-center items-center py-4.5 px-5 rounded-full border border-gray-400 cursor-pointer">
+                <span class="flex justify-center items-center py-4.5 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary transition duration-300">
                   <img src="./assets/img/VillaListings/arrow-left.svg" alt="Arrow Left Icon">
                 </span>
-                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">1</span>
-                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">2</span>
-                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white">3</span>
-                <span class="flex justify-center items-center py-4.5 px-5 rounded-full border border-gray-400 cursor-pointer">
+                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white transition duration-300">1</span>
+                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white transition duration-300">2</span>
+                <span class="flex justify-center items-center py-3 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary hover:text-white transition duration-300">3</span>
+                <span class="flex justify-center items-center py-4.5 px-5 rounded-full border border-gray-400 cursor-pointer hover:bg-Primary transition duration-300">
                   <img src="./assets/img/VillaListings/arrow-right2.svg" alt="Arrow Left Icon">
                 </span>
               </div>
