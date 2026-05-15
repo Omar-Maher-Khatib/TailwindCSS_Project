@@ -19,6 +19,7 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
+    --container-xl: 36rem;
     --container-2xl: 42rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -332,6 +333,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
   }
@@ -358,6 +362,24 @@
   }
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
+  }
+  .my-60 {
+    margin-block: calc(var(--spacing) * 60);
+  }
+  .my-60\.75 {
+    margin-block: calc(var(--spacing) * 60.75);
+  }
+  .my-243 {
+    margin-block: calc(var(--spacing) * 243);
+  }
+  .my-332 {
+    margin-block: calc(var(--spacing) * 332);
+  }
+  .my-\[243\] {
+    margin-block: 243;
+  }
+  .my-\[243px\] {
+    margin-block: 243px;
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -440,6 +462,9 @@
   .mb-25 {
     margin-bottom: calc(var(--spacing) * 25);
   }
+  .mb-26 {
+    margin-bottom: calc(var(--spacing) * 26);
+  }
   .mb-40 {
     margin-bottom: calc(var(--spacing) * 40);
   }
@@ -448,6 +473,12 @@
   }
   .mb-125 {
     margin-bottom: calc(var(--spacing) * 125);
+  }
+  .mb-\[14\] {
+    margin-bottom: 14;
+  }
+  .mb-\[104px\] {
+    margin-bottom: 104px;
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -496,6 +527,15 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
   }
   .h-200 {
     height: calc(var(--spacing) * 200);
@@ -554,6 +594,15 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
@@ -562,6 +611,24 @@
   }
   .w-75 {
     width: calc(var(--spacing) * 75);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
+  }
+  .w-170 {
+    width: calc(var(--spacing) * 170);
+  }
+  .w-175 {
+    width: calc(var(--spacing) * 175);
+  }
+  .w-200 {
+    width: calc(var(--spacing) * 200);
+  }
+  .w-300 {
+    width: calc(var(--spacing) * 300);
   }
   .w-\[0\.5px\] {
     width: 0.5px;
@@ -577,6 +644,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .w-xl {
+    width: var(--container-xl);
   }
   .flex-1 {
     flex: 1;
@@ -885,6 +955,9 @@
   .bg-\[\#00565E\]\/5 {
     background-color: color-mix(in oklab, #00565E 5%, transparent);
   }
+  .bg-\[\#A6EEF9\] {
+    background-color: #A6EEF9;
+  }
   .bg-\[\#BEC8CA\]\/10 {
     background-color: color-mix(in oklab, #BEC8CA 10%, transparent);
   }
@@ -1090,8 +1163,14 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .p-43 {
     padding: calc(var(--spacing) * 43);
@@ -1355,6 +1434,9 @@
   .text-\[48px\] {
     font-size: 48px;
   }
+  .text-\[60px\] {
+    font-size: 60px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -1448,11 +1530,17 @@
   .text-\[\#3F484A\]\/50 {
     color: color-mix(in oklab, #3F484A 50%, transparent);
   }
+  .text-\[\#004F56\] {
+    color: #004F56;
+  }
   .text-\[\#5F6F73\] {
     color: #5F6F73;
   }
   .text-\[\#6B7280\] {
     color: #6B7280;
+  }
+  .text-\[\#6F797A\] {
+    color: #6F797A;
   }
   .text-\[\#6F797A\]\/50 {
     color: color-mix(in oklab, #6F797A 50%, transparent);
@@ -1581,6 +1669,12 @@
     --tw-shadow-color: color-mix(in srgb, #1E6F78 30%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-Primary) 30%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-Primary\/50 {
+    --tw-shadow-color: color-mix(in srgb, #1E6F78 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-Primary) 50%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
   .outline {
