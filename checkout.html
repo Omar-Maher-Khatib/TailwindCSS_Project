@@ -86,7 +86,7 @@
 
     <!-- Main Content -->
     <section>
-      <div class="container mx-auto px-8 mt-8">
+      <div class="container mx-auto sm:px-8 px-4 mt-8">
         <!-- Title -->
         <div class="flex flex-col">
             <span class="font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">SECURE CHECKOUT</span>
@@ -94,7 +94,142 @@
         </div>
 
         <!-- Checkout Form -->
+        <div class="flex lg:flex-row flex-col xl:gap-12 gap-8 mt-16">
+          <!-- Left Side -->
+          <div class="flex flex-col justify-center lg:w-2/3 w-full">
+            <!-- Number 1 -->
+            <div class="flex flex-col">
+              <!-- Title -->
+              <div class="space-x-4 flex items-center mb-8">
+                <span class="rounded-4xl px-4 py-2 bg-Primary font-Primary font-semibold text-[14px] text-white">1</span>
+                <span class="font-Secondary font-bold text-[24px] text-[#181C1D]">Personal Information</span>
+              </div>
+              <!-- Details -->
+              <div class="flex justify-center items-center gap-6">
+                <div class="w-1/2">
+                  <div class="font-Primary text-[11px] text-[#3F484A] tracking-[0.88px] w-full mb-2">First Name</div>
+                  <input type="text" placeholder="Julian" class="mb-4 py-3 px-4 bg-[#F1F4F4] w-full
+                  rounded-xl border border-none focus:outline-none focus:ring-2 focus:ring-Primary font-Primary">
+                </div>
+                <div class="w-1/2">
+                  <div class="font-Primary text-[11px] text-[#3F484A] tracking-[0.88px] w-full mb-2">Last Name</div>
+                  <input type="text" placeholder="Artemis" class="mb-4 py-3 px-4 bg-[#F1F4F4] w-full
+                  rounded-xl border border-none focus:outline-none focus:ring-2 focus:ring-Primary font-Primary">
+                </div>
+              </div>
+              <div class="w-full mt-6">
+                <div class="font-Primary text-[11px] text-[#3F484A] tracking-[0.88px] w-full mb-2">EMAIL ADDRESS</div>
+                  <input type="email" placeholder="julian@ethereal.luxury" class="mb-4 py-3 px-4 bg-[#F1F4F4] w-full
+                  rounded-xl border border-none focus:outline-none focus:ring-2 focus:ring-Primary font-Primary">
+                </div>
+            </div>
 
+            <!-- Number 2 -->
+             <div class= "flex flex-col mt-12">
+                <!-- Title -->
+                <div class="space-x-4 flex items-center mb-8">
+                  <span class="rounded-4xl px-4 py-2 bg-Primary font-Primary font-semibold text-[14px] text-white">2</span>
+                  <span class="font-Secondary font-bold text-[24px] text-[#181C1D]">Payment Details</span>
+                </div>
+                <!-- Details -->
+                 <div class="flex flex-col p-8 bg-[#F1F4F4] rounded-xl mb-12">
+                  <div class="flex justify-between items-center w-full">
+                    <div class="flex items-center">
+                      <img src="./assets/img/checkout/card.svg" alt="Visa" class="mr-3">
+                      <span class="font-Primary font-medium text-[#181C1D]">Credit or Debit Card</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="font-Primary font-semibold text-[8px] text-Primary bg-white py-1.5 px-[10.5px] rounded-sm">Visa</span>
+                      <span class="font-Primary font-semibold text-[8px] text-[#715B30] bg-white py-1.5 px-2 rounded-sm">AMEX</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col mt-6 w-full">
+                    <div class="relative">
+                      <div class="font-Primary text-[11px] text-[#3F484A] tracking-[0.88px] mb-2">CARD NUMBER</div>
+                      <input type="text" placeholder="**** **** **** 1234" class="mb-4 mt-2 py-4 px-4
+                             bg-white w-full rounded-xl font-Primary text-[#6B7280]">
+                      <img src="./assets/img/checkout/lock.svg" alt="Info" class="absolute right-4 top-12">
+                    </div>
+                    <div class="w-full mt-4 gap-6 flex items-center">
+                      <div class="w-1/2">
+                        <div class="font-Primary text-[11px] text-[#3F484A] tracking-[0.88px] mb-2">EXPIRY DATE</div>
+                        <input type="text" placeholder="MM/YY" class="mb-4 mt-2 py-4 px-4
+                             bg-white rounded-xl font-Primary text-[#6B7280] w-full">
+                      </div>
+                      <div class="w-1/2">
+                        <div class="font-Primary text-[11px] text-[#3F484A] tracking-[0.88px] mb-2">CVC</div>
+                        <input type="text" placeholder="***" class="mb-4 mt-2 py-4 px-4
+                             bg-white rounded-xl font-Primary text-[#6B7280] w-full">
+                      </div>
+                    </div>
+                  </div>
+
+                 </div>
+                 <!-- Protection -->
+                  <div class="flex items-center p-4 bg-[#F1F4F4] rounded-xl mb-12">
+                    <img src="./assets/img/checkout/secure.svg" alt="Protection" class="mr-4">
+                    <p class="font-Primary text-[14px] text-[#3F484A]">
+                      Your transaction is secured with 256-bit SSL encryption. We do not store your full card details on ourservers.</p>
+                  </div>
+             </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="lg:w-1/3 w-full">
+            <div class="w-full bg-white rounded-[30px] flex flex-col mb-8">
+              <img src="./assets/img/checkout/image.png" alt="Image" class="rounded-t-[30px]">
+              <div class="flex flex-col xl:p-8 lg:p-5 p-8">
+                <h2 class="font-Secondary font-bold text-[24px] text-[#181C1D] mb-4">Stay Summary</h2>
+                <div class="w-full flex justify-between">
+                  <div class="flex flex-col space-y-1 w-1/2">
+                    <span class="font-Primary text-[10px] text-[#3F484A] tracking-[1px]">CHECK IN</span>
+                    <span class="font-Primary font-semibold text-Primary">Dec 14, 2024</span>
+                  </div>
+                  <div class="flex flex-col space-y-1 w-1/2">
+                    <span class="font-Primary text-[10px] text-[#3F484A] tracking-[1px]">CHECK OUT</span>
+                    <span class="font-Primary font-semibold text-Primary">Dec 21, 2024</span>
+                  </div>
+                </div>
+                <div class="h-[0.5px] w-full bg-gray-200/50 mt-6 mb-8"></div>
+                <div class="flex flex-col space-y-4 w-full border-b border-gray-300/50 pb-4">
+                  <div class="flex justify-between items-center font-Primary text-[#3F484A]">
+                    <span>7 Nights Luxury Stay</span>
+                    <span class="font-medium">$12,400.00</span>
+                  </div>
+                  <div class="flex justify-between items-center font-Primary text-[#3F484A]">
+                    <span>Private Chef Service</span>
+                    <span class="font-medium">$1,250.00</span>
+                  </div>
+                  <div class="flex justify-between items-center font-Primary text-[#3F484A]">
+                    <span>Resort Fee & Taxes</span>
+                    <span class="font-medium">$840.00</span>
+                  </div>
+                </div>
+                <div class="flex flex-col w-full mt-6">
+                  <span class="font-Primary text-[12px] text-[#3F484A]">Total Price</span>
+                  <div class="w-full flex justify-between items-end"> 
+                    <span class="font-Secondary font-extrabold text-[36px] text-Primary">$14,490.00</span>
+                    <span class="font-Primary font-semibold text-[10px] text-[#BEC8CA]">USD</span>
+                  </div>
+                </div>
+                <a href="./confirmation.html" class="text-white bg-Primary py-4 w-full xl:px-8 text-[18px] font-Primary font-semibold 
+                rounded-[30px] cursor-pointer hover:bg-teal-700 text-center mt-8 transition duration-300 shadow-md shadow-Primary">Confirm Booking -></a>
+                <p class="w-full font-Primary text-[11px] text-[#BEC8CA] mt-8">
+                  By clicking "Confirm Booking", you agree to our Terms of Service and Cancellation Policy. 
+                </p>
+              </div>
+            </div>
+            <div class="w-full bg-[#FDDFA8]/30 rounded-[20px] flex items-center mb-25 p-6">
+              <div class="rounded-full bg-white p-4 mr-4 ">
+                <img src="./assets/img/checkout/support.svg" alt="Support" class="w-6 h-6 rounded-[30px]">
+              </div>
+              <div class="flex flex-col">
+                <span class="font-Primary font-semibold text-[14px] text-[#776135]">Need assistance?</span>
+                <p class="font-Primary text-[12px] text-[#776135]/80">Our personal concierge is available 24/7 to help you finalize your stay.</p>
+              </div>
+              </div>
+            </div>
+        </div>
       </div>
     </section>
 </body>
