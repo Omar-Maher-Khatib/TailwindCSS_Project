@@ -402,6 +402,12 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
+  .mt-9 {
+    margin-top: calc(var(--spacing) * 9);
+  }
+  .mt-9\.5 {
+    margin-top: calc(var(--spacing) * 9.5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -422,6 +428,9 @@
   }
   .mt-\[6\.87px\] {
     margin-top: 6.87px;
+  }
+  .mt-\[38px\] {
+    margin-top: 38px;
   }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
@@ -570,6 +579,9 @@
   .w-1\/4 {
     width: calc(1 / 4 * 100%);
   }
+  .w-1\/5 {
+    width: calc(1 / 5 * 100%);
+  }
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
@@ -581,6 +593,9 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-4\/5 {
+    width: calc(4 / 5 * 100%);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
