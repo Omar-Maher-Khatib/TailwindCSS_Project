@@ -86,23 +86,184 @@
 
     <!-- Main Content -->
     <section>
-      <div class="container mx-auto px-8 mt-9.5">
+      <div class="container mx-auto sm:px-8 px-3 mt-9.5">
         <!-- Title -->
         <div class="flex flex-col mb-12">
             <span class="font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">MEMBER DASHBOARD</span>
             <h2 class="font-Secondary font-extrabold text-[#181C1D] sm:text-[48px] text-[34px] tracking-[-3px]">Your Coastal Sanctuary</h2>
         </div>
 
-        <div class="w-full flex items-start gap-12">
+        <div class="w-full flex flex-col lg:flex-row items-start gap-12">
           <!-- Sidebar -->
-           <div class="w-1/5"></div>
+          <aside class="w-full lg:w-1/5">
+            <nav>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#" class="flex items-center gap-3 bg-Primary text-white px-6 py-4.5 rounded-[15px] shadow-md">
+                    <img src="./assets/img/dashboard/booking.svg" alt="Bookings" class="w-5 h-5" />
+                    <span class="font-Primary font-semibold">Bookings</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./favorites.html" class="flex items-center gap-3 text-[#5F6F73] px-4 py-3 rounded-lg hover:bg-gray-50">
+                    <img src="./assets/img/dashboard/favorites.svg" alt="Favorites" class="w-5 h-5" />
+                    <span class="font-Secondary">Favorites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-3 text-[#5F6F73] px-4 py-3 rounded-lg hover:bg-gray-50">
+                    <img src="./assets/img/dashboard/profile.svg" alt="Profile" class="w-5 h-5" />
+                    <span class="font-Secondary">Profile</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
-           <!-- Main Dashboard Content -->
-           <div class="w-4/5"></div>
+            <div class="mt-15 bg-[#FDDFA8] rounded-2xl p-6">
+              <h4 class="font-Primary font-semibold text-[14px] text-[#776135]">ELITE MEMBER</h4>
+              <p class="text-sm text-[#6B5A3C] mt-2">You have 4,200 sand points remaining for your next upgrade.</p>
+              <button class="mt-4 bg-[#776135] w-full py-2 rounded-full text-white font-Secondary font-semibold">Redeem Points</button>
+            </div>
+          </aside>
+
+          <!-- Main Dashboard Content -->
+          <div class="w-full lg:w-4/5 space-y-8">
+            <!-- Active Journeys -->
+            <div>
+              <h3 class="font-Secondary font-bold text-[#181C1D] text-[24px]">Active Journeys</h3>
+              <div class="mt-4 bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-stretch">
+                <div class="md:w-1/2 relative">
+                  <img src="./assets/img/dashboard/Overwater villa.png" alt="Active Journey" class="w-full h-80 md:h-full object-cover md:object-cover md:rounded-l-2xl" />
+                  <div class="mb-3 absolute top-4 left-4">
+                    <span class="font-Primary font-semibold text-[12px] bg-white text-[#00565E] text-xs px-3 py-1 rounded-full">CONFIRMED</span>
+                  </div>
+                </div>
+                <div class="md:w-1/2 sm:p-10 p-5 flex flex-col justify-center bg-white md:rounded-r-2xl">
+                  <p class="font-Primary font-semibold text-[11px] text-[#715B30] tracking-[1.1px]">AUGUST 12 — AUGUST 19, 2024</p>
+                  <h4 class="font-Secondary font-bold text-[30px] text-[#181C1D] mt-3">The Azure Infinity Villa</h4>
+                  <div class="w-full flex items-center gap-6 text-sm text-[#6B6B6B] mt-4">
+                    <div class="font-Primary text-[14px] flex items-center gap-2"><img src="./assets/img/dashboard/guests.svg" alt="Guests" /> 2 Guests</div>
+                    <div class="font-Primary text-[14px] flex items-center gap-2"><img src="./assets/img/dashboard/sea view.svg" alt="View" /> Sea View</div>
+                  </div>
+                  <div class="mt-6 flex sm:flex-row flex-col items-center gap-4 w-full">
+                    <button class="font-Primary font-semibold w-full bg-[#00565E] text-white py-4 rounded-[30px] shadow-md">Manage Stay</button>
+                    <button class="font-Primary font-semibold sm:w-fit w-full rounded-[30px] bg-white px-6 py-4 border border-gray-200">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Past Memories -->
+            <div class="mt-16.25">
+              <div class="flex items-center justify-between">
+                <h3 class="font-Secondary font-bold text-[24px]">Past Memories</h3>
+                <a href="#" class="font-Primary font-semibold text-[14px] text-Primary">View Archive -></a>
+              </div>
+              <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="bg-[#F1F4F4] rounded-[20px] sm:p-6 p-3 flex items-center gap-6">
+                  <img src="./assets/img/dashboard/Coastal retreat.png" alt="Shoreline Suite" class="object-cover rounded-md grayscale" />
+                  <div class="flex-1">
+                    <p class="font-Primary text-[10px] text-[#3F484A]/60">JUNE 2024</p> 
+                    <h5 class="font-Primary font-semibold text-[#181C1D]">Shoreline Suite 402</h5>         
+                    <div class="flex justify-between items-center">
+                      <p class="font-Primary text-[12px] text-[#3F484A]">7 Nights · Completed</p>
+                      <a href="#" class="font-Primary font-semibold text-[#0F6B63] text-[12px] underline underline-offset-4">Rebook</a>
+                    </div>     
+                  </div>
+                </div>
+
+                <div class="bg-[#F1F4F4] rounded-[20px] sm:p-6 p-3 flex justify-end items-center gap-6">
+                  <img src="./assets/img/dashboard/Forest cottage.png" alt="Forest Haven" class="object-cover rounded-md" />
+                  <div class="flex-1">
+                    <p class="font-Primary text-[10px] text-[#3F484A]/60">MARCH 2024</p>
+                    <h5 class="font-Primary font-semibold text-[#181C1D]">Forest Haven Villa</h5>     
+                    <div class="flex justify-between items-center">
+                      <p class="font-Primary text-[12px] text-[#3F484A]">4 Nights · Completed</p>
+                      <a href="#" class="font-Primary font-semibold text-[#0F6B63] text-[12px] underline underline-offset-4">Rebook</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Promotional Banner -->
+            <div class="bg-linear-to-r from-[#00565E] to-[#064641] text-white rounded-[40px] overflow-hidden flex md:flex-row flex-col items-center mt-16 mb-102.75">
+              <div class="md:px-12 px-8 pb-12 mt-20">
+                <p class="text-xs uppercase tracking-wider text-[#A6EFF9]">Personalized For You</p>
+                <h3 class="font-Secondary font-extrabold text-3xl mt-3">Explore the Hidden Grottoes of Capri</h3>
+                <p class="mt-3 text-sm text-[#A6EFF9]">As a valued member, we've curated an exclusive private charter experience for your next visit.</p>
+                <button class="font-Primary mt-6 bg-[#F6D89A] text-[#776135] px-8 py-4 rounded-full font-semibold">Inquire Now</button>
+              </div>
+              <div class="block">
+                <img src="./assets/img/dashboard/Capri shoreline.png" alt="Capri" class="w-fit" />
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="mt-20 w-full bg-[#F1F4F4]">
+      <div class="p-4 xl:p-20  pb-0 xl:mx-[10%] mx-[2%] flex items-start justify-between flex-wrap gap-12">
+        <!-- Column 1 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[20px] tracking-[2px] mb-8">AQUA ESCAPE</h2>
+            <p class="text-[#5F6F73] text-[16px]/6 font-Primary mb-8">Crafting ethereal shoreline memories <br>
+              since 2018. Your sanctuary of luxury <br>
+              and peace.</p>
+            <div class="flex items-center">
+              <img src="assets/img/footer/earth.svg" alt="earth" class="mr-4"/>
+              <img src="assets/img/footer/social.svg" alt="social" class="mr-4"/>
+              <img src="assets/img/footer/message.svg" alt="message"/>
+            </div>
+         </div>
+
+          <!-- Column 2 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[18px] mb-6">Resort</h2>
+            <ul class="flex-col items-start text-[#5F6F73] text-[16px]/6 font-Primary">
+              <li class="mb-4">Sustainability</li>
+              <li class="mb-4">Private Charter</li>
+              <li class="mb-4">Concierge</li>
+              <li class="mb-4">Press</li>
+              <li>Legal</li>
+            </ul>
+         </div>
+
+          <!-- Column 3 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[18px] mb-6">Destinations</h2>
+            <ul class="flex-col items-start text-[#5F6F73] text-[16px]/6 font-Primary">
+              <li class="mb-4">North Shore Villas</li>
+              <li class="mb-4">The Cove Retreat</li>
+              <li class="mb-4">Beachfront Suites</li>
+              <li >Mountain Hideaways</li>
+            </ul>
+         </div>
+
+          <!-- Column 4 -->
+         <div class="flex-col items-start w-75">
+            <h2 class="font-semibold font-Primary text-Primary text-[18px] mb-6">Contact Us</h2>
+            <ul class="flex-col items-start text-[#5F6F73] text-[16px]/6 font-Primary mb-6">
+              <li>123 Azure Drive, Shoreline Bay</li>
+              <li>hello@aquaescape.com</li>
+              <li>+1 (555) 000-8888</li>
+            </ul>
+            <div class="flex items-center">
+              <img src="assets/img/footer/visa.svg" alt="visa" class="mr-4"/>
+              <img src="assets/img/footer/cash.svg" alt="cash" class="mr-4"/>
+              <img src="assets/img/footer/wallet.svg" alt="wallet"/>
+            </div>
+         </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="w-full mt-20 pb-10 flex items-end justify-center text-center border-t border-[#BEC8CA]/20">
+        <p class="mt-10 text-[14px] text-[#5F6F73] font-Primary tracking-[0.35px]">© 2026 AQUA ESCAPE RESORT. THE ETHEREAL SHORELINE. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer> 
 </body>
 </html>
 
