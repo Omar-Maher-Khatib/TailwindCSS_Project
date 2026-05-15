@@ -252,6 +252,9 @@
   .top-\[calc\(50\%-10px\)\] {
     top: calc(50% - 10px);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-2 {
     right: calc(var(--spacing) * 2);
   }
@@ -919,6 +922,12 @@
       border-color: color-mix(in oklab, var(--color-gray-300) 60%, transparent);
     }
   }
+  .border-gray-300\/80 {
+    border-color: color-mix(in srgb, oklch(87.2% 0.01 258.338) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-gray-300) 80%, transparent);
+    }
+  }
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
@@ -1017,6 +1026,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-gray-300) 60%, transparent);
     }
+  }
+  .bg-transparent {
+    background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1198,6 +1210,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-36 {
     padding-inline: calc(var(--spacing) * 36);
@@ -1554,6 +1569,9 @@
   .text-\[\#715B30\] {
     color: #715B30;
   }
+  .text-\[\#57441B\] {
+    color: #57441B;
+  }
   .text-\[\#261900\] {
     color: #261900;
   }
@@ -1675,6 +1693,18 @@
     --tw-shadow-color: color-mix(in srgb, #1E6F78 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-Primary) 50%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-gray-300 {
+    --tw-shadow-color: oklch(87.2% 0.01 258.338);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-gray-300) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-gray-300\/50 {
+    --tw-shadow-color: color-mix(in srgb, oklch(87.2% 0.01 258.338) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-gray-300) 50%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
   .outline {
