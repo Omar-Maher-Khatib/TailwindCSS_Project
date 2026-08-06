@@ -1724,6 +1724,13 @@
       }
     }
   }
+  .hover\:bg-Button1 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-Button1);
+      }
+    }
+  }
   .hover\:bg-Primary {
     &:hover {
       @media (hover: hover) {
