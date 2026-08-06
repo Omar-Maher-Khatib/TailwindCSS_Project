@@ -14,6 +14,7 @@
 }
 
 .dark {
+    --color-Tertiary: #995328;
     --color-Footer: white;
     --color-Primary: #278e99;
     --color-Body: #1f1f1f;
