@@ -12,9 +12,9 @@
     />
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
-<body class="bg-[#F7FAFA] lg:overflow-hidden">
+<body class="bg-Body lg:overflow-hidden">
     <!-- Header -->
-    <header class="bg-white fixed w-full z-10">
+    <header class="bg-Neutral/70 fixed w-full z-10">
       <div
         class="container mx-auto flex items-center justify-between py-6 px-8"
       >
@@ -33,16 +33,16 @@
 
         <!-- Middle Side -->
         <ul class="space-x-4 hidden lg:flex xl:space-x-8">
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="./villas.html">Villas</a>
           </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="#">Experiences</a>
           </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="#">Dining</a>
           </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="#">Gallery</a>
           </li>
         </ul>
@@ -67,6 +67,14 @@
             >
             Book Now
           </a>
+          <button id="theme-toggle"
+            class="text-white bg-Primary py-2 px-3 xl:px-2 text-[16px] font-Primary font-semibold 
+            rounded-[30px] cursor-pointer hover:bg-teal-700 transition duration-300"
+          >
+          <div id="themeIcon" class="flex items-center justify-center w-6 h-6">
+            <img src="./assets/img/header/dark.svg" alt="Moon" class="w-6 h-6 object-contain" />
+          </div>
+          </button>
         </div>
       </div>
     </header>
@@ -99,26 +107,26 @@
       <div class="lg:w-1/2 h-screen flex items-center justify-center relative">
         <div class="w-full flex flex-col 2xl:p-64 xl:p-40 sm:p-20 p-5">
           <div class="flex flex-col items-start mb-10">
-            <h2 class="font-Secondary font-extrabold text-[30px] text-[#181C1D] mb-2">Login</h2>
-            <p class="font-Primary text-[#3F484A]">Please enter your details to continue</p>
+            <h2 class="font-Secondary font-extrabold text-[30px] text-Text mb-2">Login</h2>
+            <p class="font-Primary text-Text">Please enter your details to continue</p>
           </div>
           <div class="w-full flex flex-col">
-            <span class="font-Primary text-[#3F484A] text-[11px] tracking-[0.88px]">EMAIL ADDRESS</span>
+            <span class="font-Primary text-Text text-[11px] tracking-[0.88px]">EMAIL ADDRESS</span>
             <input
               type="email"
               placeholder="name@example.com"
-              class="w-full rounded-[30px] px-4 py-4.5 text-[#6F797A]/50 bg-[#F1F4F4] mt-2"
+              class="w-full rounded-[30px] px-4 py-4.5 text-[#6F797A]/50 bg-Button1 mt-2"
             />
             <div class="flex items-center justify-between mt-6">
-              <span class="font-Primary text-[#3F484A] text-[11px] tracking-[0.88px]">PASSWORD</span> 
+              <span class="font-Primary text-Text text-[11px] tracking-[0.88px]">PASSWORD</span> 
               <span class="font-Primary font-semibold text-Primary text-[11px] tracking-[0.88px]">FORGOT PASSWORD?</span>
             </div>
             <input
               type="password"
               placeholder="••••••••"
-              class="w-full rounded-[30px] px-4 py-4.5 text-[#6F797A]/50 bg-[#F1F4F4] mt-2"
+              class="w-full rounded-[30px] px-4 py-4.5 text-[#6F797A]/50 bg-Button1 mt-2"
             />
-            <label class="flex items-center gap-2 font-Primary text-[14px] text-[#3F484A] mt-8">
+            <label class="flex items-center gap-2 font-Primary text-[14px] text-Text mt-8">
              <input type="checkbox" class="w-4 h-4 cursor-pointer"> Keep me logged in for 30 days
             </label>
             <button
@@ -128,12 +136,13 @@
             </button>
           </div>
           <div class="mt-10 pt-10 border-t border-gray-100 flex items-center justify-center">
-            <p class="font-Primary text-[#3F484A]">Don't have an account? <a href="./register.html" class="text-Primary font-Primary font-semibold hover:underline">Sign up</a></p>
+            <p class="font-Primary text-Text">Don't have an account? <a href="./register.html" class="text-Primary font-Primary font-semibold hover:underline">Sign up</a></p>
           </div>
         </div>
-        <div class="absolute sm:right-8 bottom-[23.5px] text-[#3F484A] text-[10px] tracking-[1.5px] font-Primary">© 2024 AQUA ESCAPE RESORT. THE ETHEREAL SHORELINE.</div>
+        <div class="absolute sm:right-8 bottom-[23.5px] text-Text text-[10px] tracking-[1.5px] font-Primary">© 2024 AQUA ESCAPE RESORT. THE ETHEREAL SHORELINE.</div>
       </div>
      </div>
     </section>
+    <script src="./main.js"></script>
   </body>
 </html>
