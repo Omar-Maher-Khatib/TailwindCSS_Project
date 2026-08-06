@@ -886,6 +886,9 @@
   .bg-Button1 {
     background-color: var(--color-Button1);
   }
+  .bg-Footer {
+    background-color: var(--color-Footer);
+  }
   .bg-Neutral {
     background-color: var(--color-Neutral);
   }
