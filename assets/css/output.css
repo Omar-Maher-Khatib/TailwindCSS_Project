@@ -59,8 +59,13 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-Footer: #5F6F73;
+    --color-Body: #F7FAFA;
+    --color-Text: #181C1D;
+    --color-Button1: #F1F4F4;
     --color-Primary: #1E6F78;
     --color-Tertiary: #FF8C42;
+    --color-Neutral: #FFFFFF;
     --font-Primary: 'Inter', sans-serif;
     --font-Secondary: 'Plus Jakarta Sans', sans-serif;
   }
@@ -840,6 +845,21 @@
       border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
+  .bg-Body {
+    background-color: var(--color-Body);
+  }
+  .bg-Button1 {
+    background-color: var(--color-Button1);
+  }
+  .bg-Neutral {
+    background-color: var(--color-Neutral);
+  }
+  .bg-Neutral\/70 {
+    background-color: color-mix(in srgb, #FFFFFF 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-Neutral) 70%, transparent);
+    }
+  }
   .bg-Primary {
     background-color: var(--color-Primary);
   }
@@ -1406,8 +1426,14 @@
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
   }
+  .text-Footer {
+    color: var(--color-Footer);
+  }
   .text-Primary {
     color: var(--color-Primary);
+  }
+  .text-Text {
+    color: var(--color-Text);
   }
   .text-\[\#0F6B63\] {
     color: #0F6B63;
@@ -2229,6 +2255,14 @@
       padding-inline: calc(var(--spacing) * 96);
     }
   }
+}
+.dark {
+  --color-Footer: white;
+  --color-Primary: #278e99;
+  --color-Body: #1f1f1f;
+  --color-Neutral: #4b4b4b;
+  --color-Text: #F7FAFA;
+  --color-Button1: #2c2c2c;
 }
 @property --tw-translate-x {
   syntax: "*";
