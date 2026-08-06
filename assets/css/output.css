@@ -881,6 +881,12 @@
   .bg-Button1 {
     background-color: var(--color-Button1);
   }
+  .bg-Button1\/80 {
+    background-color: color-mix(in srgb, #F1F4F4 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-Button1) 80%, transparent);
+    }
+  }
   .bg-Neutral {
     background-color: var(--color-Neutral);
   }
@@ -1498,6 +1504,12 @@
     color: color-mix(in srgb, #181C1D 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-Text) 50%, transparent);
+    }
+  }
+  .text-Text\/60 {
+    color: color-mix(in srgb, #181C1D 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-Text) 60%, transparent);
     }
   }
   .text-Text\/70 {

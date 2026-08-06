@@ -12,9 +12,9 @@
     />
     <link href="./assets/css/output.css" rel="stylesheet" />
 </head>
-<body class="bg-[#F7FAFA]">
+<body class="bg-Body">
     <!-- Header -->
-    <header class="bg-white w-full shadow-md">
+    <header class="bg-Neutral/70 w-full shadow-md">
       <div
         class="container mx-auto flex items-center justify-between py-6 px-8"
       >
@@ -33,16 +33,16 @@
 
         <!-- Middle Side -->
         <ul class="space-x-4 hidden lg:flex xl:space-x-8">
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="./villas.html">Villas</a>
           </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="#">Experiences</a>
           </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="#">Dining</a>
           </li>
-          <li class="text-[16px] text-[#5F6F73] font-Secondary">
+          <li class="text-[16px] text-Footer font-Secondary">
             <a href="#">Gallery</a>
           </li>
         </ul>
@@ -74,6 +74,14 @@
               >
               Book Now
             </a>
+            <button id="theme-toggle"
+            class="text-white bg-Primary py-2 px-3 xl:px-2 text-[16px] font-Primary font-semibold 
+            rounded-[30px] cursor-pointer hover:bg-teal-700 transition duration-300"
+          >
+          <div id="themeIcon" class="flex items-center justify-center w-6 h-6">
+            <img src="./assets/img/header/dark.svg" alt="Moon" class="w-6 h-6 object-contain" />
+          </div>
+          </button>
             <img src="./assets/img/dashboard/User profile.png" alt="User" class="w-11 h-11" />
           </div>
         </div>
@@ -86,7 +94,7 @@
         <!-- Title -->
         <div class="flex flex-col mb-12">
             <span class="font-Primary font-semibold text-[11px] text-Primary tracking-[0.88px]">MEMBER DASHBOARD</span>
-            <h2 class="font-Secondary font-extrabold text-[#181C1D] sm:text-[48px] text-[34px] tracking-[-3px]">Your Coastal Sanctuary</h2>
+            <h2 class="font-Secondary font-extrabold text-Text sm:text-[48px] text-[34px] tracking-[-3px]">Your Coastal Sanctuary</h2>
         </div>
 
         <div class="w-full flex flex-col lg:flex-row items-start gap-12">
@@ -126,7 +134,7 @@
           <div class="w-full lg:w-4/5 space-y-8">
             <!-- Active Journeys -->
             <div>
-              <h3 class="font-Secondary font-bold text-[#181C1D] text-[24px]">Active Journeys</h3>
+              <h3 class="font-Secondary font-bold text-Text text-[24px]">Active Journeys</h3>
               <div class="mt-4 bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row items-stretch">
                 <div class="md:w-1/2 relative">
                   <img src="./assets/img/dashboard/Overwater villa.png" alt="Active Journey" class="w-full h-80 md:h-full object-cover md:object-cover md:rounded-l-2xl" />
@@ -134,12 +142,12 @@
                     <span class="font-Primary font-semibold text-[12px] bg-white text-[#00565E] text-xs px-3 py-1 rounded-full">CONFIRMED</span>
                   </div>
                 </div>
-                <div class="md:w-1/2 sm:p-10 p-5 flex flex-col justify-center bg-white md:rounded-r-2xl">
+                <div class="md:w-1/2 sm:p-10 p-5 flex flex-col justify-center bg-Neutral md:rounded-r-2xl">
                   <p class="font-Primary font-semibold text-[11px] text-[#715B30] tracking-[1.1px]">AUGUST 12 — AUGUST 19, 2024</p>
-                  <h4 class="font-Secondary font-bold text-[30px] text-[#181C1D] mt-3">The Azure Infinity Villa</h4>
+                  <h4 class="font-Secondary font-bold text-[30px] text-Text mt-3">The Azure Infinity Villa</h4>
                   <div class="w-full flex items-center gap-6 text-sm text-[#6B6B6B] mt-4">
-                    <div class="font-Primary text-[14px] flex items-center gap-2"><img src="./assets/img/dashboard/guests.svg" alt="Guests" /> 2 Guests</div>
-                    <div class="font-Primary text-[14px] flex items-center gap-2"><img src="./assets/img/dashboard/sea view.svg" alt="View" /> Sea View</div>
+                    <div class="text-Text font-Primary text-[14px] flex items-center gap-2"><img src="./assets/img/dashboard/guests.svg" alt="Guests" /> 2 Guests</div>
+                    <div class="text-Text font-Primary text-[14px] flex items-center gap-2"><img src="./assets/img/dashboard/sea view.svg" alt="View" /> Sea View</div>
                   </div>
                   <div class="mt-6 flex sm:flex-row flex-col items-center gap-4 w-full">
                     <button class="font-Primary font-semibold w-full bg-[#00565E] text-white py-4 rounded-[30px] shadow-md">Manage Stay</button>
@@ -152,29 +160,29 @@
             <!-- Past Memories -->
             <div class="mt-16.25">
               <div class="flex items-center justify-between">
-                <h3 class="font-Secondary font-bold text-[24px]">Past Memories</h3>
+                <h3 class="text-Text font-Secondary font-bold text-[24px]">Past Memories</h3>
                 <a href="#" class="font-Primary font-semibold text-[14px] text-Primary">View Archive -></a>
               </div>
               <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div class="bg-[#F1F4F4] rounded-[20px] sm:p-6 p-3 flex items-center gap-6">
+                <div class="bg-Button1 rounded-[20px] sm:p-6 p-3 flex items-center gap-6">
                   <img src="./assets/img/dashboard/Coastal retreat.png" alt="Shoreline Suite" class="object-cover rounded-md grayscale" />
                   <div class="flex-1">
-                    <p class="font-Primary text-[10px] text-[#3F484A]/60">JUNE 2024</p> 
-                    <h5 class="font-Primary font-semibold text-[#181C1D]">Shoreline Suite 402</h5>         
+                    <p class="font-Primary text-[10px] text-Text/60">JUNE 2024</p> 
+                    <h5 class="font-Primary font-semibold text-Text">Shoreline Suite 402</h5>         
                     <div class="flex justify-between items-center">
-                      <p class="font-Primary text-[12px] text-[#3F484A]">7 Nights · Completed</p>
+                      <p class="font-Primary text-[12px] text-Text">7 Nights · Completed</p>
                       <a href="#" class="font-Primary font-semibold text-[#0F6B63] text-[12px] underline underline-offset-4">Rebook</a>
                     </div>     
                   </div>
                 </div>
 
-                <div class="bg-[#F1F4F4] rounded-[20px] sm:p-6 p-3 flex justify-end items-center gap-6">
+                <div class="bg-Button1 rounded-[20px] sm:p-6 p-3 flex justify-end items-center gap-6">
                   <img src="./assets/img/dashboard/Forest cottage.png" alt="Forest Haven" class="object-cover rounded-md" />
                   <div class="flex-1">
-                    <p class="font-Primary text-[10px] text-[#3F484A]/60">MARCH 2024</p>
-                    <h5 class="font-Primary font-semibold text-[#181C1D]">Forest Haven Villa</h5>     
+                    <p class="font-Primary text-[10px] text-Text/60">MARCH 2024</p>
+                    <h5 class="font-Primary font-semibold text-Text">Forest Haven Villa</h5>     
                     <div class="flex justify-between items-center">
-                      <p class="font-Primary text-[12px] text-[#3F484A]">4 Nights · Completed</p>
+                      <p class="font-Primary text-[12px] text-Text">4 Nights · Completed</p>
                       <a href="#" class="font-Primary font-semibold text-[#0F6B63] text-[12px] underline underline-offset-4">Rebook</a>
                     </div>
                   </div>
@@ -201,7 +209,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="mt-20 w-full bg-[#F1F4F4]">
+    <footer class="mt-20 w-full bg-Button1">
       <div class="p-4 xl:p-20  pb-0 xl:mx-[10%] mx-[2%] flex items-start justify-between flex-wrap gap-12">
         <!-- Column 1 -->
          <div class="flex-col items-start w-75">
@@ -260,6 +268,7 @@
         <p class="mt-10 text-[14px] text-[#5F6F73] font-Primary tracking-[0.35px]">© 2026 AQUA ESCAPE RESORT. THE ETHEREAL SHORELINE. ALL RIGHTS RESERVED.</p>
       </div>
     </footer> 
+    <script src="./main.js"></script>
 </body>
 </html>
 
